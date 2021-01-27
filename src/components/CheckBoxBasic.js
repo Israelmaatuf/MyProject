@@ -1,10 +1,12 @@
 import React from "react";
 import "./CheckBoxBasic.css";
+import { Button , Form , Col } from 'react-bootstrap';
 import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
+
 
 export default function CheckBoxBasic() {
   return (
@@ -679,7 +681,52 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
       </div>
-      
+      <br/><br/>
+      <div className="orderFormBasicMenu">
+      <Form>
+  <Form.Row>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="שם" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="טלפון" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="אימייל" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="כתובת" />
+    </Col>
+  </Form.Row>
+</Form>
+<br/>
+<Form>
+  <Form.Row>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="מספר מנות" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="תאריך" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="יום" />
+    </Col>
+    <Col>
+      <Form.Control className="FormStyle" placeholder="שעה" />
+    </Col>
+  </Form.Row>
+</Form>
+<br/>
+<Form>
+  <Form.Row>
+    <Col >
+      <Form.Control className="CommentsToOrderBasicMenu" placeholder="הערות להזמנה" />
+    </Col>
+  </Form.Row>
+</Form>
+<br/><br/>
+<Button type="submit" className="buttonSendOrder">שלח</Button>
+        </div>      
       
         
       

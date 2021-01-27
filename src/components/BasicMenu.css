@@ -2,8 +2,12 @@
   background-color: black;
   height: 114px;
 }
+body{
+  background-color: #f7f7f7;
+}
+
 .basicMenuTitle {
-  color: brown;
+  color: #7F0909;
   text-align: right;
   position: relative;
   top: 120px;
@@ -38,7 +42,7 @@
   display: inline-block;
   position: relative;
   top: 100px;
-  background-color: brown;
+  background-color: #7F0909;
   color: white;
   padding: 12px 0px 0px 0px;
   text-align: center;
@@ -57,7 +61,7 @@
   font-size: 50px;
   font-weight: 200;
   font-family: "Heebo", Sans-serif;
-  color: brown;
+  color: #7F0909;
   background-color: #f7f7f7;
   text-align: center;
   margin-left: 20px;
