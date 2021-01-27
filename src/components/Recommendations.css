@@ -1,0 +1,14 @@
+.headerRecommendations{
+    background-color: black;
+    height: 114px;
+}
+.RecommendationsTitle{
+    color:brown;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    left: 420px;
+    font-size: 46px;
+    font-family: sans-serif;
+  }

@@ -1,0 +1,72 @@
+.headerEvents{
+  background-color: black;
+  height: 114px;
+}
+.titleEvents {
+  color:brown;
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  top: 150px;
+  left: 520px;
+  font-size: 46px;
+  font-family: sans-serif;
+  
+}
+.eventsP{
+  width: 100%;
+  font-family: "Heebo", Sans-serif;
+  font-size: 19px;
+  text-align: right;
+  color: black;
+  margin-bottom: 14px;
+  font-weight: 400;
+  line-height: 1.0em;
+  letter-spacing: 0.5px;
+  position: relative;
+  top: 10px;
+}
+
+.buttoneventDiv{
+  position: relative;
+  float: right;
+}
+.buttonEvent{
+  font-size: 17px;
+  font-weight: 300;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #662302;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #662302;
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px 12px 10px 12px;
+}
+.buttonEvent:hover{
+  text-decoration: none;
+  color: #eeff00;
+  background-color: #662302;
+  transform: scale(1.1);
+  outline: -webkit-focus-ring-color auto 1px;
+  transition-duration: .3s;
+  transition-property: transform;
+}
+.eventpic1{
+  float: left;
+  
+  position: relative;
+  top: -220px;
+  left: 30px;
+}
+.CarouselImagesEvent{
+  width: 100%;
+  float: left;
+  position: relative;
+  bottom: 100px;
+}
+.imgEvents{
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}

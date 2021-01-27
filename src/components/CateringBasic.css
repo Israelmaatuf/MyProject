@@ -1,0 +1,71 @@
+.headerBasic{
+    background-color: black;
+    height: 114px;
+  }
+  .titleBasic {
+    color:brown;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    top: 150px;
+    left: 520px;
+    font-size: 46px;
+    font-family: sans-serif;
+    
+  }
+  .basicP{
+    width: 100%;
+    font-family: "Heebo", Sans-serif;
+    font-size: 19px;
+    text-align: right;
+    color: black;
+    margin-bottom: 14px;
+    font-weight: 400;
+    line-height: 1.0em;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .buttonbasicDiv{
+    position: relative;
+    float: right;
+  }
+  .buttonBasic{
+    font-size: 17px;
+    font-weight: 300;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #662302;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #662302;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px 12px 10px 12px;
+  }
+  .buttonBasic:hover{
+    text-decoration: none;
+    color: #eeff00;
+    background-color: #662302;
+    transform: scale(1.1);
+    outline: -webkit-focus-ring-color auto 1px;
+    transition-duration: .3s;
+    transition-property: transform;
+  }
+  .basicpic1{
+    float: left;
+    position: relative;
+    top: -150px;
+    left: 30px;
+  }
+  .CarouselImagesBasic{
+    width: 100%;
+    float: left;
+    position: relative;
+    bottom: 50px;
+  }
+  .imgBasic{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }

@@ -1,0 +1,150 @@
+
+.headerHome {
+  height: 630px;
+  width: 100%;
+  background-image: url("../images/backgroundhome.jpg");  
+}
+
+.titleHome {
+  color: white;
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  top: 200px;
+  left: 700px;
+  font-size: 46px;
+  font-family: sans-serif;
+}
+.buttonEvents {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  fill: #ffa500;
+  color: #ffa500;
+  background-color: rgb(255, 255, 255, 0.01);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 0px 0px 0px 2px;
+  padding: 15px 12px 15px 13px;
+}
+.buttonEvents:hover {
+  text-decoration: none;
+  color: #eeff00;
+}
+.buttonDiv {
+  position: relative;
+  top: 250px;
+  right: 105px;
+  float: right;
+}
+.homeChef ,
+.homeDetails {
+  width: 40%;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.1em;
+  font-family: "Heebo", Sans-serif;
+  color: black;
+  text-align: right;
+  float: right;
+  right: -70px;
+  position: relative;
+  top: 500px;
+}
+.homeP {
+  font-size: 16px;
+  text-align: right;
+  margin: 0;
+  box-sizing: border-box;
+}
+.aboutLink {
+  font-size: 19px;
+  font-weight: 300;
+  fill: #662302;
+  color: #662302;
+  background-color: rgba(2, 1, 1, 0);
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #662302;
+  border-radius: 0px 0px 0px 0px;
+  padding: 0px 0px 6px 0px;
+}
+.aboutLink:hover {
+  text-decoration: none;
+  color: #ffa500;
+}
+.pic1 {
+  float: left;
+  width: 40%;
+  position: relative;
+  top: 500px;
+}
+.pic2{
+  width: 674px;
+  height: 350px;
+  position: relative;
+  top: 598px;
+  left: 1px;
+  float: left;
+}
+.pic3{
+  width: 674px;
+  height: 350px;
+  position: relative;
+  top: 650px;
+  float: right;
+}
+.homeButtom {
+  width: 674.5px;
+  height: 350px;
+  background-color: black;
+  float: right;
+  position: relative;
+  top: 650px;
+  padding: 50px 50px 50px 50px;
+}
+.homeButtom1 {
+  width: 674.5px;
+  height: 350px;
+  background-color: black;
+  float: left;
+  position: relative;
+  top: 598px;
+  left: 1px;
+  padding: 50px 50px 50px 50px;
+}
+
+.homeButtomH2 {
+  color: #ffffff;
+  font-family: "Heebo", Sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0;
+}
+.homeButtom1H2 {
+  color: #ffffff;
+  font-family: "Heebo", Sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.1em;
+  text-align: center;
+  margin-top: 10px;
+}
+.homeButtomDiv{
+  width: 80%;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+  font-family: "Heebo", Sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 60px;
+  padding-left: 10px;
+}
+
+

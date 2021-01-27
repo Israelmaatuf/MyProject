@@ -1,0 +1,78 @@
+.col1 {
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+.col2 {
+  display: inline-block;
+  margin-left: 100px;
+  position: relative;
+  top: 52px;
+}
+#salatsMenuTitle {
+    width: 100%;
+  margin-right: 30px;
+  font-size: 1.5.rem;
+  color:#662302;
+  font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* .menuBasicVegetarian {
+  width: 100%;
+  position: relative;
+  top: 40px;
+  right: 49px;
+} */
+.menuBasicVegetarian1{
+    position: relative;
+    top: 50px;
+    right: 12px;
+}
+.menuBasicVegetarian2{
+    position: relative;
+    top: 50px;
+    right: 52px;
+    
+}
+.menuBasicMeetFish1{
+    position: relative;
+    top: 52px;
+    left: 40px;
+    
+}
+.menuBasicMeetFish2{
+    position: relative;
+    top: 52px;
+    right: 25px;
+}
+.menuBasicMeet1{
+    position: relative;
+    top: 52px;
+    right: 70px;
+}
+.menuBasicMeet2{
+    position: relative;
+    top: 52px;
+    right: 120px;
+}
+.menuBasicExtras1{
+    position: relative;
+    top: 52px;
+    right: 85px;
+}
+.menuBasicExtras2{
+    position: relative;
+    top: 52px;
+    right: 145px;
+}
+.menuBasicSpecialOfShabbat1{
+    position: relative;
+    top: 52px;
+    right: 92px;
+}
+.menuBasicSpecialOfShabbat2{
+    position: relative;
+    top: 52px;
+    right: 152px;
+}

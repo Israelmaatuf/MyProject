@@ -1,0 +1,32 @@
+.headerAbout{
+  height: 750px;
+  width: 100%;
+  background-image: url("../images/aboutpic2.jpg");
+}
+.titleAbout{
+  color: white;
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  top: 100px;
+  left: 950px;
+  font-size: 46px;
+  font-family: sans-serif;
+}
+.aboutDetailsP{
+  text-align: right;
+  display: inline-block;
+  width: 38%;
+  position: relative;
+  top: 150px;
+  left: 534px;
+  color: #FFFFFF;
+    font-family: "Heebo", Sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+    
+}
+
+
