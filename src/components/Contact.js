@@ -1,14 +1,16 @@
 import React from "react";
+// import { Form , Col, Row, Button } from "react-bootstrap";
 import "./Contact.css";
 
 function Contact() {
   return (
     <div className="headerContact">
-        <div className="contactTitle">
-          <div>
-      <h2>צור קשר</h2>
+      <div className="contactConteiner">
+        
+
+        
       </div>
-      </div>
+      
     </div>
   );
 }

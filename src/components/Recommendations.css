@@ -3,7 +3,7 @@
     height: 114px;
 }
 .RecommendationsTitle{
-    color:brown;
+    color:#7f0909;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -12,3 +12,56 @@
     font-size: 46px;
     font-family: sans-serif;
   }
+  .RecommendationsCarousel{
+      text-align: center;
+      width: 50%;
+      height: 400px;
+      position: relative;
+      top: 200px;
+      left: 400px;
+      color: white;
+      background-color: black;
+      direction: rtl;
+  }
+  .textCarousel{
+      width: 350px;
+      direction: rtl;
+      text-align: center;
+      position: relative;
+      right: 150px;
+      top: 40px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5em;
+  }
+  .RecommendationsFooter{
+    color: #FFA500;
+    font-family: "Heebo", Sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+  }
+  .RecommendationsForm{
+      width: 60%;
+      position: relative;
+      left: 330px;
+      top: 200px;
+      direction: rtl;
+      text-align: center;
+  }
+  .WriteARecommendation{
+    height: 100px;
+    border: 1px solid #662302;
+}
+.ButtonSendARecommendation{
+    width: 150px;
+    border: none;
+    text-align: center;
+    background-color: #662302;
+    position: relative;
+}
+.FormStyleRecommendations{
+    border: 1px solid #662302;
+}

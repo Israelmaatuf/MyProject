@@ -1,5 +1,5 @@
 import React from "react";
-import "./CheckBoxBasic.css";
+import "./CheckBoxEvents.css";
 import { Button , Form , Col } from 'react-bootstrap';
 import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
@@ -8,12 +8,12 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 
 
-export default function CheckBoxBasic() {
+export default function CheckBoxEvents() {
   return (
     <div>
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             סלטים (6 לבחירה)
           </FormLabel>
           <br />
@@ -75,7 +75,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
       </div>
-      <div className="col2">
+      <div className="EventsMenuCol2">
         <FormControl component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
@@ -135,7 +135,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
       </div>
-      <div className="col2">
+      <div className="EventsMenuCol3">
         <FormControl component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
@@ -191,9 +191,9 @@ export default function CheckBoxBasic() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             מנה ראשונה - צמחוני (3 לבחירה)
           </FormLabel>
           <br />
@@ -218,7 +218,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicVegetarian1" component="fieldset">
+        <FormControl className="menuEventsVegetarianCol2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="טורטיה תפוח אדמה מטוגן"
@@ -240,28 +240,23 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicVegetarian2" component="fieldset">
+        <FormControl className="menuEventsVegetarianCol3" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
-              value="טורטיה תפוח אדמה מטוגן"
+              value="מיקס מטוגנים (פסטלים/סיגרים/קובות)"
               control={<Checkbox color="primary" />}
-              label="טורטיה תפוח אדמה מטוגן"
-              labelPlacement="טורטיה תפוח אדמה מטוגן"
+              label="מיקס מטוגנים (פסטלים/סיגרים/קובות)"
+              labelPlacement="מיקס מטוגנים (פסטלים/סיגרים/קובות)"
             />
-            <FormControlLabel
-              value="טורטיה ירק"
-              control={<Checkbox color="primary" />}
-              label="טורטיה ירק"
-              labelPlacement="טורטיה ירק"
-            />
+            
           </FormGroup>
         </FormControl>
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             מנה ראשונה בשרי/דגים (3 לבחירה)
           </FormLabel>
           <br />
@@ -292,7 +287,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeetFish1" component="fieldset">
+        <FormControl className="menuEventsMeetFishCol2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="מוסקה ברוטב עגבניות"
@@ -320,7 +315,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeetFish2" component="fieldset">
+        <FormControl className="menuEventsMeetFishCol3" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="סלמון טריאקי*"
@@ -345,9 +340,9 @@ export default function CheckBoxBasic() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             עיקריות (3 לבחירה)
           </FormLabel>
           <br />
@@ -384,7 +379,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeet1" component="fieldset">
+        <FormControl className="menuEventsMeetCol2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="שיפודי חזה עוף"
@@ -418,7 +413,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeet2" component="fieldset">
+        <FormControl className="menuEventsMeetCol3" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="כרעיים עוף בגריל*"
@@ -449,9 +444,9 @@ export default function CheckBoxBasic() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             תוספות (3 לבחירה)
           </FormLabel>
           <br />
@@ -488,7 +483,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicExtras1" component="fieldset">
+        <FormControl className="menuEventsExtrasCol2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="שעועית ברוטב עגבניות"
@@ -522,7 +517,7 @@ export default function CheckBoxBasic() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicExtras2" component="fieldset">
+        <FormControl className="menuEventsExtrasCol3" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="פטריות מוקפצות"
@@ -547,9 +542,9 @@ export default function CheckBoxBasic() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             המיוחדים של שבת
           </FormLabel>
           <br />
@@ -575,7 +570,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
         <FormControl
-          className="menuBasicSpecialOfShabbat1"
+          className="menuEventsSpecialOfShabbatCol2"
           component="fieldset"
         >
           <FormGroup aria-label="position" col>
@@ -600,7 +595,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
         <FormControl
-          className="menuBasicSpecialOfShabbat2"
+          className="menuEventsSpecialOfShabbatCol3"
           component="fieldset"
         >
           <FormGroup aria-label="position" col>
@@ -621,9 +616,9 @@ export default function CheckBoxBasic() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="EventsMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel className="salatsMenuTitle" component="legend">
+          <FormLabel className="MenuEventsTitle" component="legend">
             שונות (בתוספת תשלום)
           </FormLabel>
           <br />
@@ -643,7 +638,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
         <FormControl
-          className="menuBasicOfBreadsCol2"
+          className="EventsMenuBreadsCol2"
           component="fieldset"
         >
           <FormGroup aria-label="position" col>
@@ -662,7 +657,7 @@ export default function CheckBoxBasic() {
           </FormGroup>
         </FormControl>
         <FormControl
-          className="menuBasicOfBreadsCol3"
+          className="EventsMenuBreadsCol3"
           component="fieldset"
         >
           <FormGroup aria-label="position" col>
@@ -682,20 +677,20 @@ export default function CheckBoxBasic() {
         </FormControl>
       </div>
       <br/><br/>
-      <div className="orderFormBasicMenu">
+      <div className="orderFormEventsMenu">
       <Form>
   <Form.Row>
     <Col>
-      <Form.Control className="FormStyle" placeholder="שם" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="שם" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="טלפון" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="טלפון" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="אימייל" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="אימייל" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="כתובת" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="כתובת" />
     </Col>
   </Form.Row>
 </Form>
@@ -703,16 +698,16 @@ export default function CheckBoxBasic() {
 <Form>
   <Form.Row>
     <Col>
-      <Form.Control className="FormStyle" placeholder="מספר מנות" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="מספר מנות" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="תאריך" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="תאריך" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="יום" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="יום" />
     </Col>
     <Col>
-      <Form.Control className="FormStyle" placeholder="שעה" />
+      <Form.Control className="FormStyleEventsMenu" placeholder="שעה" />
     </Col>
   </Form.Row>
 </Form>
@@ -720,12 +715,12 @@ export default function CheckBoxBasic() {
 <Form>
   <Form.Row>
     <Col >
-      <Form.Control className="CommentsToOrderBasicMenu" placeholder="הערות להזמנה" />
+      <Form.Control className="CommentsToOrderEventsMenu" placeholder="הערות להזמנה" />
     </Col>
   </Form.Row>
 </Form>
 <br/><br/>
-<Button type="submit" className="buttonSendOrder">שלח</Button>
+<Button type="submit" className="buttonSendEventsOrder">שלח</Button>
         </div>      
       
         

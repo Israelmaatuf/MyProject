@@ -1,15 +1,21 @@
-.col1 {
+.EventsMenuCol1 {
   display: inline-block;
   margin-left: 100px;
   margin-right: 50px;
 }
-.col2 {
+.EventsMenuCol2 {
   display: inline-block;
-  margin-left: 100px;
   position: relative;
-  top: 52px;
+  left: 30px;
+  top: 50px;
 }
-#salatsMenuTitle {
+.EventsMenuCol3 {
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    top: 52px;
+  }
+.MenuEventsTitle {
     width: 100%;
   margin-right: 30px;
   font-size: 1.5.rem;
@@ -19,78 +25,78 @@
     line-height: 1.2;
 }
 
-.menuBasicVegetarian1{
+.menuEventsVegetarianCol2{
     position: relative;
     top: 50px;
-    right: 11px;
+    right: 2px;
 }
-.menuBasicVegetarian2{
+.menuEventsVegetarianCol3{
     position: relative;
     top: 50px;
-    right: 52px;
+    right: 22px;
     
 }
-.menuBasicMeetFish1{
+.menuEventsMeetFishCol2{
     position: relative;
     top: 52px;
-    left: 5px;
+    left: 13px;
     
 }
-.menuBasicMeetFish2{
+.menuEventsMeetFishCol3{
+    position: relative;
+    top: 52px;
+    right: 29px;
+}
+.menuEventsMeetCol2{
+    position: relative;
+    top: 52px;
+    right: 40px;
+}
+.menuEventsMeetCol3{
+    position: relative;
+    top: 52px;
+    right: 68px;
+}
+.menuEventsExtrasCol2{
+    position: relative;
+    top: 50px;
+    right: 84px;
+}
+.menuEventsExtrasCol3{
+    position: relative;
+    top: 52px;
+    right: 123px;
+}
+.menuEventsSpecialOfShabbatCol2{
     position: relative;
     top: 52px;
     right: 60px;
 }
-.menuBasicMeet1{
+.menuEventsSpecialOfShabbatCol3{
     position: relative;
     top: 52px;
-    right: 73px;
+    right: 100px;
 }
-.menuBasicMeet2{
+.EventsMenuBreadsCol2{
     position: relative;
     top: 52px;
-    right: 120px;
+    right: 55px;
 }
-.menuBasicExtras1{
+.EventsMenuBreadsCol3{
     position: relative;
     top: 52px;
-    right: 105px;
+    right: 138px;
 }
-.menuBasicExtras2{
-    position: relative;
-    top: 52px;
-    right: 160px;
-}
-.menuBasicSpecialOfShabbat1{
-    position: relative;
-    top: 52px;
-    right: 92px;
-}
-.menuBasicSpecialOfShabbat2{
-    position: relative;
-    top: 52px;
-    right: 150px;
-}
-.menuBasicOfBreadsCol2{
-    position: relative;
-    top: 52px;
-    right: 118px;
-}
-.menuBasicOfBreadsCol3{
-    position: relative;
-    top: 52px;
-    right: 220px;
-}
-.orderFormBasicMenu{
+.orderFormEventsMenu{
     position: relative;
     right: 60px;
     
 }
-.CommentsToOrderBasicMenu{
+.CommentsToOrderEventsMenu{
     height: 100px;
     border: 1px solid #662302;
 }
-.buttonSendOrder{
+.buttonSendEventsOrder{
     width: 150px;
     border: none;
     text-align: center;
@@ -98,6 +104,6 @@
     position: relative;
     right: 350px;
 }
-.FormStyle{
+.FormStyleEventsMenu{
     border: 1px solid #662302;
 }

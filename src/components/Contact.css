@@ -1,3 +1,45 @@
 .headerContact{
     background-color: black;
+    height: 114px;
 }
+.contactConteiner{
+    max-width: 1200px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .elmentor-row{
+      width: 100%;
+      display: flex;
+  }
+  .elementor-top{
+    width: 49.917%;
+    position: relative;
+    min-height: 1px;
+    display: flex;
+  }
+  /* .ContactForm{
+    width: 40%;
+    position: relative;
+    top: 150px;
+    right: 175px;
+    float: right;
+    direction: rtl;
+    text-align: center;
+}
+.WriteAMassage{
+  height: 100px;
+  border: 1px solid #662302;
+}
+.ButtonSendAMassage{
+  width: 150px;
+  border: none;
+  text-align: center;
+  background-color: #662302;
+  position: relative;
+}
+.FormStyleContact{
+    margin-left: 40px;
+    border: 1px solid #662302;
+} */

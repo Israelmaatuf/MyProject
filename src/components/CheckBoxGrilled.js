@@ -10,9 +10,9 @@ import FormLabel from "@material-ui/core/FormLabel";
 export default function CheckBoxGrilled() {
   return (
     <div>
-      <div className="col1">
+      <div className="grilledMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="salatsMenuGrilledTitle" component="legend">
             סלטים (6 לבחירה)
           </FormLabel>
           <br />
@@ -74,7 +74,7 @@ export default function CheckBoxGrilled() {
           </FormGroup>
         </FormControl>
       </div>
-      <div className="col2">
+      <div className="grilledMenuCol2">
         <FormControl component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
@@ -134,7 +134,7 @@ export default function CheckBoxGrilled() {
           </FormGroup>
         </FormControl>
       </div>
-      <div className="col2">
+      <div className="grilledMenuCol3">
         <FormControl component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
@@ -190,9 +190,9 @@ export default function CheckBoxGrilled() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="grilledMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="salatsMenuGrilledTitle" component="legend">
             מספר סוגי לחמים (ללא הגבלה)
           </FormLabel>
           <br />
@@ -211,7 +211,7 @@ export default function CheckBoxGrilled() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicVegetarian1" component="fieldset">
+        <FormControl className="menuGrilledBreads1" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="לחמניות כוסמין"
@@ -221,7 +221,7 @@ export default function CheckBoxGrilled() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicVegetarian2" component="fieldset">
+        <FormControl className="menuGrilledBreads2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="פיתות משוחות בשמן זית וזעתר"
@@ -234,9 +234,9 @@ export default function CheckBoxGrilled() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="grilledMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="salatsMenuGrilledTitle" component="legend">
             בשרים על האש (ללא הגבלה)
           </FormLabel>
           <br />
@@ -261,7 +261,7 @@ export default function CheckBoxGrilled() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeetFish1" component="fieldset">
+        <FormControl className="menuGrilledMeet1" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="שישליק הודו (שווארמה מקבה)"
@@ -283,7 +283,7 @@ export default function CheckBoxGrilled() {
             />
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeetFish2" component="fieldset">
+        <FormControl className="menuGrilledMeet2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="נקניקיות הודו/בקר"
@@ -308,9 +308,9 @@ export default function CheckBoxGrilled() {
       </div>
       <br />
       <br />
-      <div className="col1">
+      <div className="grilledMenuCol1">
         <FormControl component="fieldset">
-          <FormLabel id="salatsMenuTitle" component="legend">
+          <FormLabel className="salatsMenuGrilledTitle" component="legend">
           תוספות
           </FormLabel>
           <br />
@@ -336,7 +336,7 @@ export default function CheckBoxGrilled() {
             
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeet1" component="fieldset">
+        <FormControl className="menuGrilledExtras1" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="תפוח אדמה אפוי"
@@ -353,7 +353,7 @@ export default function CheckBoxGrilled() {
             
           </FormGroup>
         </FormControl>
-        <FormControl className="menuBasicMeet2" component="fieldset">
+        <FormControl className="menuGrilledExtras2" component="fieldset">
           <FormGroup aria-label="position" col>
             <FormControlLabel
               value="ירקות מוקפצים"
@@ -374,20 +374,20 @@ export default function CheckBoxGrilled() {
     
       <br />
       <br />
-      <div className="orderFormBasicMenu">
+      <div className="orderFormGrilledMenu">
         <Form>
           <Form.Row>
             <Col>
-              <Form.Control className="FormStyle" placeholder="שם" />
+              <Form.Control className="FormGrilledStyle" placeholder="שם" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="טלפון" />
+              <Form.Control className="FormGrilledStyle" placeholder="טלפון" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="אימייל" />
+              <Form.Control className="FormGrilledStyle" placeholder="אימייל" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="כתובת" />
+              <Form.Control className="FormGrilledStyle" placeholder="כתובת" />
             </Col>
           </Form.Row>
         </Form>
@@ -395,16 +395,16 @@ export default function CheckBoxGrilled() {
         <Form>
           <Form.Row>
             <Col>
-              <Form.Control className="FormStyle" placeholder="מספר מנות" />
+              <Form.Control className="FormGrilledStyle" placeholder="מספר מנות" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="תאריך" />
+              <Form.Control className="FormGrilledStyle" placeholder="תאריך" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="יום" />
+              <Form.Control className="FormGrilledStyle" placeholder="יום" />
             </Col>
             <Col>
-              <Form.Control className="FormStyle" placeholder="שעה" />
+              <Form.Control className="FormGrilledStyle" placeholder="שעה" />
             </Col>
           </Form.Row>
         </Form>
@@ -413,7 +413,7 @@ export default function CheckBoxGrilled() {
           <Form.Row>
             <Col>
               <Form.Control
-                className="CommentsToOrderBasicMenu"
+                className="CommentsToOrderGrilledMenu"
                 placeholder="הערות להזמנה"
               />
             </Col>
@@ -421,7 +421,7 @@ export default function CheckBoxGrilled() {
         </Form>
         <br />
         <br />
-        <Button type="submit" className="buttonSendOrder">
+        <Button type="submit" className="buttonGrilledSendOrder">
           שלח
         </Button>
       </div>

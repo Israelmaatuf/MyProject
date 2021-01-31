@@ -1,93 +1,78 @@
-.col1 {
+.grilledMenuCol1 {
   display: inline-block;
   margin-left: 100px;
   margin-right: 50px;
 }
-.col2 {
+.grilledMenuCol2 {
   display: inline-block;
   margin-left: 100px;
   position: relative;
-  top: 52px;
+  right: 20px;
+  top: 50px;
 }
-#salatsMenuTitle {
-    width: 100%;
+.grilledMenuCol3 {
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;
+    right: 30px;
+    top: 50px;
+  }
+.salatsMenuGrilledTitle {
+  width: 100%;
   margin-right: 30px;
   font-size: 1.5.rem;
-  color:#662302;
+  color: #662302;
   font-family: inherit;
-    font-weight: 500;
-    line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-.menuBasicVegetarian1{
-    position: relative;
-    top: 50px;
-    right: 12px;
+.menuGrilledBreads1 {
+  position: relative;
+  top: 50px;
+  right: 67px;
 }
-.menuBasicVegetarian2{
-    position: relative;
-    top: 50px;
-    right: 52px;
-    
+.menuGrilledBreads2 {
+  position: relative;
+  top: 50px;
+  right: 185px;
 }
-.menuBasicMeetFish1{
-    position: relative;
-    top: 52px;
-    left: 40px;
-    
+.menuGrilledMeet1 {
+  position: relative;
+  top: 52px;
+  right: 62px;
 }
-.menuBasicMeetFish2{
-    position: relative;
-    top: 52px;
-    right: 25px;
+.menuGrilledMeet2 {
+  position: relative;
+  top: 52px;
+  right: 82px;
 }
-.menuBasicMeet1{
+.menuGrilledExtras1 {
     position: relative;
     top: 52px;
-    right: 70px;
-}
-.menuBasicMeet2{
+    right: 90px;
+  }
+  .menuGrilledExtras2 {
     position: relative;
     top: 52px;
-    right: 120px;
+    right: 195px;
+  }
+.orderFormGrilledMenu {
+  position: relative;
+  right: 60px;
 }
-.menuBasicExtras1{
-    position: relative;
-    top: 52px;
-    right: 85px;
+.CommentsToOrderGrilledMenu {
+  height: 100px;
+  border: 1px solid #662302;
 }
-.menuBasicExtras2{
-    position: relative;
-    top: 52px;
-    right: 145px;
+.buttonGrilledSendOrder {
+  width: 150px;
+  border: none;
+  text-align: center;
+  background-color: #662302;
+  position: relative;
+  right: 350px;
 }
-.menuBasicSpecialOfShabbat1{
-    position: relative;
-    top: 52px;
-    right: 92px;
-}
-.menuBasicSpecialOfShabbat2{
-    position: relative;
-    top: 52px;
-    right: 152px;
-}
-.orderFormBasicMenu{
-    position: relative;
-    right: 60px;
-    
-}
-.CommentsToOrderBasicMenu{
-    height: 100px;
-    border: 1px solid #662302;
-}
-.buttonSendOrder{
-    width: 150px;
-    border: none;
-    text-align: center;
-    background-color: #662302;
-    position: relative;
-    right: 350px;
-}
-.FormStyle{
-    border: 1px solid #662302;
+.FormGrilledStyle {
+  border: 1px solid #662302;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import CheckBoxBasic from "./CheckBoxBasic";
+import CheckBoxEvents from "./CheckBoxEvents";
 
 import "./EventMenu.css";
 
@@ -14,7 +14,7 @@ function EventMenu() {
       </div>
       
       <div className="inputEventsMenu">
-        <CheckBoxBasic />
+        <CheckBoxEvents />
       </div>
       <div className="eventsMenuDiv">
         <span className="eventsMenuSpan">תפריט אירועים</span>
