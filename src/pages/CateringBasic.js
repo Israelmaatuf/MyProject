@@ -1,5 +1,5 @@
 import React from "react";
-import "./CateringBasic.css";
+import "../css/CateringBasic.css";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";

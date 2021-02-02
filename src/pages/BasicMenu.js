@@ -1,7 +1,7 @@
 import React from "react";
 
-import CheckBoxBasic from "./CheckBoxBasic";
-import "./BasicMenu.css";
+import CheckBoxBasic from "../components/CheckBoxBasic";
+import "../css/BasicMenu.css";
 
 function BasicMenu() {
   return (

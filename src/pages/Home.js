@@ -6,7 +6,7 @@ import homeImage3 from "../images/homepic3.jpeg";
 import homeImage4 from "../images/homepic4.jpeg";
 import React from "react";
 
-import "./Home.css";
+import "../css/Home.css";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Form , Col, Button, Carousel } from "react-bootstrap";
-import "./Recommendations.css";
+import "../css/Recommendations.css";
 
 function Recommendations() {
   return (

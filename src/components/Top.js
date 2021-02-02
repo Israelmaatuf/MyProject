@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import Home from "./Home";
-import About from "./About";
-import Grilled from "./Grilled";
-import CateringBasic from "./CateringBasic";
-import EventsCatering from "./EventsCatering";
-import Contact from "./Contact";
-import Recommendations from "./Recommendations";
-import BasicMenu from "./BasicMenu";
-import EventMenu from "./EventMenu";
-import GrilledMenu from "./GrilledMenu";
-import Order from "./Order";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Grilled from "../pages/Grilled";
+import CateringBasic from "../pages/CateringBasic";
+import EventsCatering from "../pages/EventsCatering";
+import Contact from "../pages/Contact";
+import Recommendations from "../pages/Recommendations";
+import BasicMenu from "../pages/BasicMenu";
+import EventMenu from "../pages/EventMenu";
+import GrilledMenu from "../pages/GrilledMenu";
+import Order from "../pages/Order";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Dropdown , Image } from "react-bootstrap";
 import Logo from "../images/LogoChefPinchas.png";
-import "./Top.css";
+import "../css/Top.css";
 
 const Top = () => {
   const [navbar, setNavbar] = useState(false);

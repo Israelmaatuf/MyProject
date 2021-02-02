@@ -1,5 +1,5 @@
 import React from "react";
-import "./EventsCatering.css";
+import "../css/EventsCatering.css";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CheckBoxGrilled.css";
+import "../css/CheckBoxGrilled.css";
 import { Button, Form, Col } from "react-bootstrap";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";

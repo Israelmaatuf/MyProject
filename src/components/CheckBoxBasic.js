@@ -1,5 +1,5 @@
 import React from "react";
-import "./CheckBoxBasic.css";
+import "../css/CheckBoxBasic.css";
 import { Button , Form , Col } from 'react-bootstrap';
 import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";

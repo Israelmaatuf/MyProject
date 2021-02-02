@@ -4,7 +4,7 @@ import { Image } from "react-bootstrap";
 import OrderPic1 from "../images/cateringpic1.jpg";
 import OrderPic2 from "../images/eventpic1.jpg";
 import OrderPic3 from "../images/grilledpic3.jpg";
-import "./Order.css";
+import "../css/Order.css";
 
 function Order() {
   return (
