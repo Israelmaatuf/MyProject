@@ -3,43 +3,37 @@
     height: 114px;
 }
 .contactConteiner{
-    max-width: 1200px;
-    display: flex;
-    margin-right: auto;
+    width: 100%;
+    float:right;
     margin-left: auto;
-    position: relative;
+    margin-right: auto;
   }
-  .elmentor-row{
-      width: 100%;
-      display: flex;
-  }
-  .elementor-top{
-    width: 49.917%;
-    position: relative;
-    min-height: 1px;
-    display: flex;
-  }
-  /* .ContactForm{
-    width: 40%;
-    position: relative;
-    top: 150px;
-    right: 175px;
-    float: right;
+  .contactTitle{
     direction: rtl;
-    text-align: center;
-}
-.WriteAMassage{
-  height: 100px;
-  border: 1px solid #662302;
-}
-.ButtonSendAMassage{
-  width: 150px;
-  border: none;
-  text-align: center;
-  background-color: #662302;
-  position: relative;
-}
-.FormStyleContact{
-    margin-left: 40px;
-    border: 1px solid #662302;
-} */
+    text-align: right;
+    position: relative;
+    font-size: 40px;
+    font-family: "Heebo", Sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    top: 80px;
+    right: 150px;
+  }
+  .contactForm{
+    text-align: right;
+    direction: rtl;
+    position: relative;
+    top: 100px;
+    right: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    display: block;
+    
+    
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: "Heebo", Sans-serif;
+    
+    
+  }

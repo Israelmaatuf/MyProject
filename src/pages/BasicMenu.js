@@ -1,22 +1,19 @@
 import React from "react";
-
-import CheckBoxBasic from "../components/CheckBoxBasic";
+import ProductCheckbox from "../components/ProductCheckbox";
 import "../css/BasicMenu.css";
 
 function BasicMenu() {
   return (
     <div className="headerBasicMenu">
       <div className="basicMenuTitle">
-        <div>
           <h2>טופס הזמנה בייסיק</h2>
-        </div>
       </div>
       
       <div className="inputBasicMenu">
-        <CheckBoxBasic />
+        <ProductCheckbox />
       </div>
       <div className="basicMenuDiv">
-        <span className="basicMenuSpan">תפריט בייסיק</span>
+        <span className="menuSpanDiv">תפריט בייסיק</span>
       </div>
 
       <div className="basicPrice">
