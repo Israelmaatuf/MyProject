@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Grilled from "../pages/Grilled";
@@ -16,70 +16,69 @@ import Logo from "../images/LogoChefPinchas.png";
 import "../css/Top.css";
 
 const Top = () => {
-  const [navbar, setNavbar] = useState(false);
+  
 
   return (
     <Router>
       <div className="Top">
         <header className="header">
-          <div expanded={navbar} className="container">
+          <div  className="container">
             <Link
-              onClick={() => setNavbar(false)}
               className="navigationLink"
               to="/"
             >
               ראשי
             </Link>
             <Link
-              onClick={() => setNavbar(false)}
+              
               className="navigationLink"
               to="/About"
             >
               אודות
             </Link>
 
-            <Dropdown onClick={() => setNavbar(false)} className="navigationLink">
+            <Dropdown  className="navigationLink">
               <Dropdown.Toggle>קייטרינג</Dropdown.Toggle>
 
               <Dropdown.Menu className="menuDrop">
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/CateringBasic">
+                <Dropdown.Item   href="/CateringBasic">
                   קייטרינג בייסיק
                 </Dropdown.Item>
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/EventsCatering">
+                <Dropdown.Item   href="/EventsCatering">
                   קייטרינג אירועים
                 </Dropdown.Item>
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/Grilled">בשרים על האש</Dropdown.Item>
+                <Dropdown.Item  href="/Grilled">בשרים על האש</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             
-            <Dropdown onClick={() => setNavbar(false)} className="navigationLink">
+            <Dropdown  className="navigationLink">
               <Dropdown.Toggle>תפריט והזמנה</Dropdown.Toggle>
 
               <Dropdown.Menu className="menuDrop">
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/BasicMenu">
+                <Dropdown.Item  href="/BasicMenu">
                   תפריט בייסיק
                 </Dropdown.Item>
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/EventMenu">
+                <Dropdown.Item  href="/EventMenu">
                   תפריט אירועים
                 </Dropdown.Item>
-                <Dropdown.Item onClick={() => setNavbar(false)} href="/GrilledMenu"> על האש</Dropdown.Item>
+                <Dropdown.Item  href="/GrilledMenu"> על האש</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Link
-              onClick={() => setNavbar(false)}
+            
               className="navigationLink"
               to="/Recommendations"
             >
              המלצות
             </Link>
             <Link
-              onClick={() => setNavbar(false)}
+              
               className="navigationLink"
               to="/Contact"
             >
               צור קשר
             </Link>
-            <Link onClick={() => setNavbar(false)} to="/">
+            <Link  to="/">
             <Image className="logo" src={Logo}></Image>
             </Link>
           </div>

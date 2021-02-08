@@ -1,114 +1,107 @@
-.headerGrilledMenu {
-    background-color: black;
-    height: 114px;
-  }
-  body{
-      background-color: #f7f7f7;
-    }
+.headerEventsMenu {
+  background-color: black;
+  height: 114px;
+}
+body {
+  background-color: #f7f7f7;
+}
+
+.eventsMenuTitle {
+  color: #7f0909;
+  text-align: right;
+  position: relative;
+  top: 120px;
+  float: right;
+  left: 450px;
+  font-size: 35px;
+  font-family: "Heebo", Sans-serif;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.priceGrilledDivGrid{
+  width: 30%;
+  position: relative;
+  top: 130px;
+  margin-left: 30px;
+}
+.eventsMenuDiv {
   
-  .GrilledMenuTitle {
-    color: #7f0909;
-    text-align: right;
-    position: relative;
-    top: 120px;
-    float: right;
-    left: 450px;
-    font-size: 35px;
-    font-family: "Heebo", Sans-serif;
-    font-weight: 200;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-  }
-  .inputGrilledMenu {
-    float: right;
-    direction: rtl;
-    position: relative;
-    top: 190px;
-    text-align: right;
-  }
-  .grilledMenuDiv {
-    width: 30%;
-    height: 55px;
-    display: inline-block;
-    position: relative;
-    top: 100px;
-    background-color: #7f0909;
-    color: white;
-    padding: 12px 0px 0px 0px;
-    text-align: center;
-    margin-left: 20px;
-  }
-  .grilledMenuSpan {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .grilledPrice {
-    width: 30%;
-    height: 400px;
-    display: inline-block;
-    position: relative;
-    top: 100px;
-    font-size: 50px;
-    font-weight: 200;
-    font-family: "Heebo", Sans-serif;
-    color: #7f0909;
-  
-    text-align: center;
-    margin-left: 20px;
-  }
-  .grilledPriceSpan{
-      position: relative;
+  height: 55px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #7f0909;
+  color: white;
+  padding: 12px 0px 0px 0px;
+  text-align: center;
+  font-size: 20px;
+}
+.eventsPrice {
+  position: relative;
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "Heebo", Sans-serif;
+  color: #7f0909;
+  text-align: center;
+}
+.eventsSpanPrice{
+  position: relative;
       text-align: right;
-      right: 140px;
-      bottom: 280px;
+      right: 65px;
+      bottom: 55px;
       color: #7f0909;
       font-size: 20px;
       line-height: 2em;
-  }
-  .ulGrilledTablePrice {
-    position: relative;
-    bottom: 60px;
-    padding: 10px 20px 20px 20px;
-    text-align: right;
-    color: #000000;
-    list-style-type: none;
-    line-height: 1;
-    margin-left: 18px;
-  }
-  .priceGrilledTable {
-    width: 28%;
-    position: relative;
-    bottom: 210px;
-    float: left;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.3em;
-    font-family: "Heebo", Sans-serif;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #7f0909;
-  }
-  .spanGrilledItems {
-    direction: rtl;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  .grilledPriceBottom {
-    width: 30%;
-    height: 100px;
-    background-color: #ece8e8;
-    position: relative;
-    bottom: 280px;
-    left: 20px;
-    float: left;
-  }
-  .priceGrilledTableBottomFooter {
-    direction: rtl;
-    position: relative;
-    margin-top: 10px;
-    padding: 3px 0px 12px 0px;
-    text-align: center;
-  }
+}
+.ulTableEventsPrice {
+  position: relative;
+  padding: 10px 20px 20px 20px;
+  text-align: right;
+  color: #000000;
+  list-style-type: none;
+  line-height: 1;
   
+}
+.priceTableEvents {
+  position: relative;
+  bottom: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3em;
+  font-family: "Heebo", Sans-serif;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #7f0909;
+}
+.spanEventsDetails {
+  direction: rtl;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.eventsPriceBottom {
+  position: relative;
+  bottom: 80px;
+  direction: rtl; 
+  padding: 3px 0px 12px 0px;
+  text-align: center;
+  background-color: #ece8e8;
+  position: relative;
+}
+.inputEventsMenu {
+  width: 100%;
+  direction: rtl;
+  position: relative;
+  bottom:700px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
