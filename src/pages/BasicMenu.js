@@ -4,15 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "../css/BasicMenu.css";
-import {
-  saladsProducts,
-  VegetarianProducts,
-  FirstMenuFishMeet,
-  SecondMenuMeet,
-  ExtrasMenu,
-  SpecialMenuShabat,
-  VariousMenu,
-} from "../Consts";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +16,15 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
 }));
-function BasicMenu() {
+function BasicMenu({
+  saladsProducts,
+  VegetarianProducts,
+  FirstMenuFishMeet,
+  SecondMenuMeet,
+  ExtrasMenu,
+  SpecialMenuShabat,
+  VariousMenu
+}) {
   const classes = useStyles();
   return (
     <div className="headerBasicMenu">
@@ -53,7 +53,7 @@ function BasicMenu() {
                       width="22"
                       height="22"
                       fill="currentColor"
-                      class="bi bi-check2-circle"
+                      className="bi bi-check2-circle"
                       viewBox="0 0 16 16"
                     >
                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
@@ -69,7 +69,7 @@ function BasicMenu() {
                       width="22"
                       height="22"
                       fill="currentColor"
-                      class="bi bi-check2-circle"
+                      className="bi bi-check2-circle"
                       viewBox="0 0 16 16"
                     >
                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
@@ -85,7 +85,7 @@ function BasicMenu() {
                       width="22"
                       height="22"
                       fill="currentColor"
-                      class="bi bi-check2-circle"
+                      className="bi bi-check2-circle"
                       viewBox="0 0 16 16"
                     >
                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />

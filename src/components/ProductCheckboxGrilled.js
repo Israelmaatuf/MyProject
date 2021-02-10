@@ -6,17 +6,14 @@ import { Button, Form, Col } from "react-bootstrap";
 import { FormControlLabel, FormGroup } from "@material-ui/core";
 import {
   saladsProducts,
-  VegetarianProducts,
-  FirstMenuFishMeet,
-  SecondMenuMeet,
-  ExtrasMenu,
-  SpecialMenuShabat,
-  VariousMenu,
+  TypesOfBreads,
+  TypesOfGrilled,
+  ExtrasOfGrilled
 } from "../Consts";
 import "../css/ProductCheckbox.css";
 
-const ProductCheckbox = ({ addItemHandler }) => {
-  const [items, setItems] = useState([]);
+const ProductCheckboxGrilled = ({ addItemHandler }) => {
+  const [items , setItems] = useState([]);
   const [input, setInput] = useState({
     name: "",
     phone: "",
@@ -67,7 +64,7 @@ const ProductCheckbox = ({ addItemHandler }) => {
       </div>
     );
   });
-  const vegetarian = VegetarianProducts.map((index) => {
+  const typeBreads = TypesOfBreads.map((index) => {
     return (
       <div key={index} className="ProductCheckbox">
         <FormControl component="fieldset">
@@ -84,7 +81,7 @@ const ProductCheckbox = ({ addItemHandler }) => {
       </div>
     );
   });
-  const firstMenu = FirstMenuFishMeet.map((index) => {
+  const typeGrilled = TypesOfGrilled.map((index) => {
     return (
       <div key={index} className="ProductCheckbox">
         <FormControl component="fieldset">
@@ -101,58 +98,7 @@ const ProductCheckbox = ({ addItemHandler }) => {
       </div>
     );
   });
-  const secondMenu = SecondMenuMeet.map((index) => {
-    return (
-      <div key={index} className="ProductCheckbox">
-        <FormControl component="fieldset">
-          <FormGroup row>
-            <FormControlLabel
-              key={index}
-              value={index}
-              control={<Checkbox color="primary" />}
-              label={index}
-              onChange={addItemHandler}
-            />
-          </FormGroup>
-        </FormControl>
-      </div>
-    );
-  });
-  const extrasMenu = ExtrasMenu.map((index) => {
-    return (
-      <div key={index} className="ProductCheckbox">
-        <FormControl component="fieldset">
-          <FormGroup row>
-            <FormControlLabel
-              key={index}
-              value={index}
-              control={<Checkbox color="primary" />}
-              label={index}
-              onChange={addItemHandler}
-            />
-          </FormGroup>
-        </FormControl>
-      </div>
-    );
-  });
-  const specialMenu = SpecialMenuShabat.map((index) => {
-    return (
-      <div key={index} className="ProductCheckbox">
-        <FormControl component="fieldset">
-          <FormGroup row>
-            <FormControlLabel
-              key={index}
-              value={index}
-              control={<Checkbox color="primary" />}
-              label={index}
-              onChange={addItemHandler}
-            />
-          </FormGroup>
-        </FormControl>
-      </div>
-    );
-  });
-  const variousMenu = VariousMenu.map((index) => {
+  const extrasGrilled = ExtrasOfGrilled.map((index) => {
     return (
       <div key={index} className="ProductCheckbox">
         <FormControl component="fieldset">
@@ -179,50 +125,26 @@ const ProductCheckbox = ({ addItemHandler }) => {
       </FormGroup>
       <br />
       <div>
-        <h6 className="productTitle">מנה ראשונה - צמחוני (3 לבחירה)</h6>
+        <h6 className="productTitle">מספר סוגי לחמים (ללא הגבלה)</h6>
         <br />
         <FormGroup aria-label="position" row>
-          {vegetarian}
+          {typeBreads}
         </FormGroup>
       </div>
       <br />
       <div>
-        <h6 className="productTitle">מנה ראשונה בשרי/דגים (3 לבחירה)</h6>
+        <h6 className="productTitle">בשרים על האש (ללא הגבלה)</h6>
         <br />
         <FormGroup aria-label="position" row>
-          {firstMenu}
+          {typeGrilled}
         </FormGroup>
       </div>
       <br />
       <div>
-        <h6 className="productTitle">עיקריות (3 לבחירה)</h6>
+        <h6 className="productTitle">תוספות</h6>
         <br />
         <FormGroup aria-label="position" row>
-          {secondMenu}
-        </FormGroup>
-      </div>
-      <br />
-      <div>
-        <h6 className="productTitle">תוספות (3 לבחירה)</h6>
-        <br />
-        <FormGroup aria-label="position" row>
-          {extrasMenu}
-        </FormGroup>
-      </div>
-      <br />
-      <div>
-        <h6 className="productTitle">המיוחדים של שבת</h6>
-        <br />
-        <FormGroup aria-label="position" row>
-          {specialMenu}
-        </FormGroup>
-      </div>
-      <br />
-      <div>
-        <h6 className="productTitle">שונות (בתוספת תשלום)</h6>
-        <br />
-        <FormGroup aria-label="position" row>
-          {variousMenu}
+          {extrasGrilled}
         </FormGroup>
       </div>
       <br />
@@ -345,4 +267,4 @@ const ProductCheckbox = ({ addItemHandler }) => {
     </div>
   );
 };
-export default ProductCheckbox;
+export default ProductCheckboxGrilled;

@@ -6,28 +6,28 @@
     right: 30px;
     float: right;
 }
-.saladsTitle{
+.productTitle{
     text-align: right;
     position: relative;
     right: 50px;
 }
-.orderFormBasicMenu{
-    width: 75%;
+.orderFormMenu{
+    width: 85%;
     position: relative;
-    right: 40px;   
+    right: 50px;   
 }
-.CommentsToOrderBasicMenu{
+.CommentsToOrderMenu{
     height: 100px;
-    border: 1px solid #662302;
+    border: 1px solid #7f0909;
 }
 .buttonSendOrder{
     width: 150px;
     border: none;
     text-align: center;
-    background-color: #662302;
+    background-color: #7f0909;
     position: relative;
     right: 340px;
 }
 .FormStyle{
-    border: 1px solid #662302;
+    border: 1px solid #7f0909;
 }

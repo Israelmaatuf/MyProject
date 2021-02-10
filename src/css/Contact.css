@@ -16,24 +16,59 @@
     font-family: "Heebo", Sans-serif;
     font-weight: 400;
     line-height: 1;
-    top: 80px;
-    right: 150px;
+    top: 120px;
+    right: 40px;
   }
-  .contactForm{
-    text-align: right;
-    direction: rtl;
+  .ContactForm{
+    width: 50%;
     position: relative;
-    top: 100px;
-    right: 150px;
-    background-color: rgba(0, 0, 0, 0);
-    
-    display: block;
-    
-    
-    font-size: 19px;
+    right: 30px;
+    bottom: 250px;
+    direction: rtl;
+    text-align: center;
+    float: right;
+}
+.WriteAMassage{
+  height: 100px;
+  border: 1px solid #662302;
+}
+.ButtonSendAMassage{
+  width: 150px;
+  border: none;
+  text-align: center;
+  position: relative;
+  right: 262px;
+  bottom: 20px;
+  background-color: #662302;
+  position: relative;
+}
+.FormStyleContact{
+  border: 1px solid #662302;
+}
+.contactImage{
+  width: 600px;
+  height: 450px;
+  position: relative;
+  top: 80px;
+  left: 20px;
+}
+.iconsContact{
+  font-size: 25px;
+  color: black;
+  float: right;
+  position: relative;
+  left: 620px;
+  margin-left: 10px;
+}
+.contactDetails{
+  color: #000000;
+    font-family: "Rubik", Sans-serif;
+    font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0px;
-    font-family: "Heebo", Sans-serif;
-    
-    
-  }
+    line-height: 1.2em;
+    float: right;
+    position: relative;
+    left: 760px;
+    top: 60px;
+    text-align: right;
+}

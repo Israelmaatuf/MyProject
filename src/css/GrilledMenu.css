@@ -1,4 +1,4 @@
-.headerEventsMenu {
+.headerGrilledMenu {
   background-color: black;
   height: 114px;
 }
@@ -6,7 +6,7 @@ body {
   background-color: #f7f7f7;
 }
 
-.eventsMenuTitle {
+.grilledMenuTitle {
   color: #7f0909;
   text-align: right;
   position: relative;
@@ -21,13 +21,12 @@ body {
   line-height: 1;
 }
 .priceGrilledDivGrid{
-  width: 30%;
+  width: 385px;
   position: relative;
   top: 130px;
   margin-left: 30px;
 }
-.eventsMenuDiv {
-  
+.grilledMenuDiv {
   height: 55px;
   position: relative;
   box-sizing: border-box;
@@ -37,7 +36,7 @@ body {
   text-align: center;
   font-size: 20px;
 }
-.eventsPrice {
+.grilledPrice {
   position: relative;
   font-size: 50px;
   font-weight: 200;
@@ -45,16 +44,16 @@ body {
   color: #7f0909;
   text-align: center;
 }
-.eventsSpanPrice{
+.grilledSpanPrice{
   position: relative;
       text-align: right;
-      right: 65px;
+      right: 50px;
       bottom: 55px;
       color: #7f0909;
       font-size: 20px;
       line-height: 2em;
 }
-.ulTableEventsPrice {
+.ulTableGrilledPrice {
   position: relative;
   padding: 10px 20px 20px 20px;
   text-align: right;
@@ -63,7 +62,7 @@ body {
   line-height: 1;
   
 }
-.priceTableEvents {
+.priceTableGrilled {
   position: relative;
   bottom: 50px;
   font-size: 16px;
@@ -74,12 +73,12 @@ body {
   padding-bottom: 5px;
   border-bottom: 1px solid #7f0909;
 }
-.spanEventsDetails {
+.spanGrilledDetails {
   direction: rtl;
   margin-right: 10px;
   font-size: 16px;
 }
-.eventsPriceBottom {
+.grilledPriceBottom {
   position: relative;
   bottom: 80px;
   direction: rtl; 
@@ -88,11 +87,11 @@ body {
   background-color: #ece8e8;
   position: relative;
 }
-.inputEventsMenu {
+.inputGrilledMenu {
   width: 100%;
   direction: rtl;
   position: relative;
-  bottom:700px;
+  bottom:750px;
   text-align: right;
 }
 
