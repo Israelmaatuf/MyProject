@@ -9,6 +9,7 @@
     margin-right: auto;
   }
   .contactTitle{
+    color: #7f0909;
     direction: rtl;
     text-align: right;
     position: relative;
@@ -30,7 +31,7 @@
 }
 .WriteAMassage{
   height: 100px;
-  border: 1px solid #662302;
+  border: 1px solid #7f0909;
 }
 .ButtonSendAMassage{
   width: 150px;
@@ -39,11 +40,11 @@
   position: relative;
   right: 262px;
   bottom: 20px;
-  background-color: #662302;
+  background-color: #7f0909;
   position: relative;
 }
 .FormStyleContact{
-  border: 1px solid #662302;
+  border: 1px solid #7f0909;
 }
 .contactImage{
   width: 600px;
@@ -59,6 +60,9 @@
   position: relative;
   left: 620px;
   margin-left: 10px;
+}
+.iconsContact:hover{
+  color: #7f0909;
 }
 .contactDetails{
   color: #000000;

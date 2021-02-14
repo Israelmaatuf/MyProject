@@ -1,4 +1,5 @@
 import React from "react";
+// import { Linking } from 'react-native'
 import { useState } from "react";
 import { MdEmail  } from "react-icons/md";
 import { FaFacebookF , FaPhone , FaWhatsapp } from "react-icons/fa";
@@ -95,7 +96,7 @@ function Contact() {
         </Button>
       </div>
       <div>
-        <Link className="iconsContact" >
+        <Link to="/mailto:ymbaku@gmail.com" className="iconsContact" >
           <MdEmail />                      
         </Link>
       </div>

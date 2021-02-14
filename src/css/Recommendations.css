@@ -53,15 +53,16 @@
   }
   .WriteARecommendation{
     height: 100px;
-    border: 1px solid #662302;
+    border: 1px solid #7f0909;
 }
 .ButtonSendARecommendation{
     width: 150px;
     border: none;
     text-align: center;
-    background-color: #662302;
+    background-color: #7f0909;
     position: relative;
+    margin-bottom: 100px;
 }
 .FormStyleRecommendations{
-    border: 1px solid #662302;
+    border: 1px solid #7f0909;
 }

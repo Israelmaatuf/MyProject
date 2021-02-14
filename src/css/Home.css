@@ -94,6 +94,7 @@
   position: relative;
   top: 650px;
   float: right;
+  
 }
 .homeButtom {
   width: 674.5px;
@@ -103,6 +104,7 @@
   position: relative;
   top: 650px;
   padding: 50px 50px 50px 50px;
+  
 }
 .homeButtom1 {
   width: 674.5px;
@@ -113,6 +115,7 @@
   top: 598px;
   left: 1px;
   padding: 50px 50px 50px 50px;
+  
 }
 
 .homeButtomH2 {
@@ -145,6 +148,7 @@
   box-sizing: border-box;
   margin-left: 60px;
   padding-left: 10px;
+  
 }
 
 

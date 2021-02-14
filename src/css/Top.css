@@ -4,6 +4,7 @@
   background-color: black;
 } */
 .navigationLink{
+  
   color: white;
   text-decoration:none;
   font-size: 19px;
@@ -19,13 +20,11 @@
   text-decoration: none;
   color:#eeff00;
 }
-/* .Dropdown{
+
+.menuDrop{
   color: white;
-  background-color: black;
-} */
-/* .menuDrop{
-  text-align: right;
-} */
+  
+}
 
 .logo{
   vertical-align: middle;
