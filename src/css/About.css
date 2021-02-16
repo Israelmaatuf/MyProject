@@ -1,9 +1,9 @@
-.headerAbout{
+.headerAbout {
   height: 750px;
   width: 100%;
   background-image: url("../images/aboutpic2.jpg");
 }
-.titleAbout{
+.titleAbout {
   color: white;
   display: inline-block;
   text-align: right;
@@ -13,20 +13,17 @@
   font-size: 46px;
   font-family: sans-serif;
 }
-.aboutDetailsP{
+.aboutDetailsP {
   text-align: right;
-  display: inline-block;
+  float: right;
   width: 38%;
   position: relative;
   top: 150px;
-  left: 534px;
-  color: #FFFFFF;
-    font-family: "Heebo", Sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 1.4em;
-    letter-spacing: 0.5px;
-    
+  margin-right: 50px;
+  color: #ffffff;
+  font-family: "Heebo", Sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
 }
-
-

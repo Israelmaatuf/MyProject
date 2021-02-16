@@ -1,9 +1,7 @@
 import React from "react";
-// import { Linking } from 'react-native'
 import { useState } from "react";
 import { MdEmail  } from "react-icons/md";
-import { FaFacebookF , FaPhone , FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaInstagramSquare , FaPhone , FaWhatsapp } from "react-icons/fa";
 import { Image } from "react-bootstrap";
 import ContactImage from "../images/contactImage.jpg";
 import { Form, Col, Button } from "react-bootstrap";
@@ -96,24 +94,24 @@ function Contact() {
         </Button>
       </div>
       <div>
-        <Link to="/mailto:ymbaku@gmail.com" className="iconsContact" >
+        <a href="mailto:ymbaku@gmail.com" target="blank" className="iconsContact" >
           <MdEmail />                      
-        </Link>
+        </a>
       </div>
       <div>
-        <Link className="iconsContact">
-          <FaFacebookF />                      
-        </Link>
+        <a href="https://www.instagram.com/chef_pinchas/" target="blank" className="iconsContact">
+          <FaInstagramSquare />                      
+        </a>
       </div>
       <div>
-        <Link className="iconsContact" >
+        <a href="tel:0537302276" target="blank" className="iconsContact" >
           <FaPhone />                      
-        </Link>
+        </a>
       </div>
       <div>
-        <Link className="iconsContact" >
+        <a href="https://api.whatsapp.com/send?phone=0537302276" target="blank" className="iconsContact" >
           <FaWhatsapp />                      
-        </Link>
+        </a>
       </div>
       <div className="contactDetails">
       <h3>להזמנות: 053-7302276</h3>

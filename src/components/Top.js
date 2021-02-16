@@ -27,27 +27,27 @@ const Top = () => {
               אודות
             </Link>
 
-            <Dropdown alignRight className="navigationLink">
-              <Dropdown.Toggle>קייטרינג</Dropdown.Toggle>
+            <Dropdown  alignRight >
+              <Dropdown.Toggle variant="warning" className="DropDown">קייטרינג</Dropdown.Toggle>
 
-              <Dropdown.Menu className="menuDrop">
-                <Dropdown.Item href="/CateringBasic">
+              <Dropdown.Menu >
+                <Dropdown.Item className="menuDrop" href="/CateringBasic">
                   קייטרינג בייסיק
                 </Dropdown.Item>
-                <Dropdown.Item href="/EventsCatering">
+                <Dropdown.Item className="menuDrop" href="/EventsCatering">
                   קייטרינג אירועים
                 </Dropdown.Item>
-                <Dropdown.Item href="/Grilled">בשרים על האש</Dropdown.Item>
+                <Dropdown.Item className="menuDrop" href="/Grilled">בשרים על האש</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
-            <Dropdown alignRight className="navigationLink">
-              <Dropdown.Toggle>תפריט והזמנה</Dropdown.Toggle>
+            <Dropdown alignRight>
+              <Dropdown.Toggle variant="warning" className="DropDown" >תפריט והזמנה</Dropdown.Toggle>
 
-              <Dropdown.Menu className="menuDrop">
-                <Dropdown.Item href="/BasicMenu">תפריט בייסיק</Dropdown.Item>
-                <Dropdown.Item href="/EventMenu">תפריט אירועים</Dropdown.Item>
-                <Dropdown.Item href="/GrilledMenu"> על האש</Dropdown.Item>
+              <Dropdown.Menu>
+                <Dropdown.Item className="menuDrop" href="/BasicMenu">תפריט בייסיק</Dropdown.Item>
+                <Dropdown.Item className="menuDrop" href="/EventMenu">תפריט אירועים</Dropdown.Item>
+                <Dropdown.Item className="menuDrop" href="/GrilledMenu"> על האש</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Link className="navigationLink" to="/Recommendations">

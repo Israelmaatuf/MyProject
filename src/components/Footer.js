@@ -1,11 +1,9 @@
 import React from 'react';
 import { MDBContainer, MDBFooter } from "mdbreact";
 import MailIcon from '@material-ui/icons/Mail';
-import PhoneEnabledIcon from '@material-ui/icons/PhoneEnabled';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import { FaInstagramSquare , FaPhone , FaWhatsapp } from "react-icons/fa";
 import "../css/Footer.css";
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -14,21 +12,23 @@ export default function Footer() {
   
 
   return (
-    <footer>
-    <MDBFooter color="white" className="Footer">
+    <footer  >
+    <MDBFooter className="Footer" color="white" >
       <MDBContainer>
-        <Link className="iconsFooter">
+        
+         
+        <a href="https://api.whatsapp.com/send?phone=0537302276" target="blank" className="iconsFooter">
+        <FaWhatsapp/>
+        </a>      
+        <a href="tel:0537302276" target="blank" className="iconsFooter">
+        <FaPhone/>
+        </a>    
+        <a href="https://www.instagram.com/chef_pinchas/" target="blank" className="iconsFooter">
+        <FaInstagramSquare/>
+        </a>      
+        <a href="mailto:ymbaku@gmail.com" target="blank" className="iconsFooter">
         <MailIcon/>
-        </Link>    
-        <Link className="iconsFooter">
-        <PhoneEnabledIcon/>
-        </Link>     
-        <Link className="iconsFooter">
-        <WhatsAppIcon/>
-        </Link>      
-        <Link className="iconsFooter">
-        <FacebookIcon/>
-        </Link>      
+        </a>    
       </MDBContainer>
       <div >
         <MDBContainer fluid>

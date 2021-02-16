@@ -20,8 +20,8 @@
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.2px;
-  fill: #ffa500;
-  color: #ffa500;
+  fill: #D0A233;
+  color: #D0A233;
   background-color: rgb(255, 255, 255, 0.01);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -30,12 +30,12 @@
 }
 .buttonEvents:hover {
   text-decoration: none;
-  color: #eeff00;
+  color: #E0A800;
 }
 .buttonDiv {
   position: relative;
   top: 250px;
-  right: 105px;
+  right: 138px;
   float: right;
 }
 .homeChef ,
