@@ -1,43 +1,23 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+
+import ProductCheckboxGrilled from "../components/ProductCheckboxGrilled";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "../css/GrilledMenu.css";
-import {
+
+export default function GrilledMenu({
   saladsProducts,
   TypesOfBreads,
   TypesOfGrilled,
   ExtrasOfGrilled,
-} from "../Consts";
-import ProductCheckboxGrilled from "../components/ProductCheckboxGrilled";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    width: "100%",
-    height: "900px",
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-function GrilledMenu() {
-  
-  const classes = useStyles();
+}) {
   return (
-    <div className="headerGrilledMenu">
-      <div className="grilledMenuTitle">
-        <h2>טופס הזמנה על האש</h2>
-      </div>
-
-      <div className="priceGrilledDivGrid">
-        <Grid container>
-          <Grid item xs={"auto"}>
-            <Paper className={classes.paper}>
-              <div className="grilledMenuDiv">
-                <span>תפריט על האש</span>
+    <div>
+      <Grid container>
+        <Grid item xs={3}>
+          <Paper className="MenuGrilledGrid">
+          <div className="grilledMenuDiv">
+          <span>תפריט על האש</span>
               </div>
 
               <div className="grilledPrice">
@@ -63,7 +43,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      7 סוגי סלטים (סלט נוסף בתוספת 3 ₪)
+                    7 סוגי סלטים (סלט נוסף בתוספת 3 ₪)
                     </span>
                   </div>
                 </li>
@@ -81,7 +61,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      8 סוגי בשרים על גריל פחמים ישראלי ישר לשולחן. (לבחירה ללא
+                    8 סוגי בשרים על גריל פחמים ישראלי ישר לשולחן. (לבחירה ללא
                       הגבלה)
                     </span>
                   </div>
@@ -100,7 +80,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      מבחר סוגי לחמים + 2 תוספות
+                    מבחר סוגי לחמים + 2 תוספות
                     </span>
                   </div>
                 </li>
@@ -118,7 +98,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      הגשה לשולחן/ מזנון - בופה
+                    הגשה לשולחן/ מזנון - בופה
                     </span>
                   </div>
                 </li>
@@ -136,7 +116,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      עריכה בכלים חד פעמי קשיח ומהודר ניתן לשדרג לכלי פורצלן
+                    עריכה בכלים חד פעמי קשיח ומהודר ניתן לשדרג לכלי פורצלן
                       יוקרתיים ומפות ומפיות מבד סאטן בתוספת 15 ₪
                     </span>
                   </div>
@@ -155,7 +135,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      שתיה קלה מסדרת קוקה קולה + עמדת שתיה חמה
+                    שתיה קלה מסדרת קוקה קולה + עמדת שתיה חמה
                     </span>
                   </div>
                 </li>
@@ -173,7 +153,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      אבטיח מלון לקינוח (ניתן לשדרג לפרלינים ופטיפורים בתוספת
+                    אבטיח מלון לקינוח (ניתן לשדרג לפרלינים ופטיפורים בתוספת
                       תשלום)
                     </span>
                   </div>
@@ -192,7 +172,7 @@ function GrilledMenu() {
                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                     </svg>
                     <span className="spanGrilledDetails">
-                      יש באפשרותנו לספק לאירוע שלכם ציוד נלווה כגון שולחנות עגול
+                    יש באפשרותנו לספק לאירוע שלכם ציוד נלווה כגון שולחנות עגול
                       או מרובע, כסאות עץ או פלסטיק, כיסוי מהודר לכיסאות,
                       שמשוניות, מחיצות, מזגנים ניידים, אוהלים, פתרונות הצללה,
                       סידור בלונים, סידור פרחים, כורסאות ישיבה פופים , שנדלירים
@@ -200,7 +180,7 @@ function GrilledMenu() {
                     </span>
                   </div>
                 </li>
-
+              
                 <li>
                   <div className="priceTableGrilled">
                     <span className="spanGrilledDetails">
@@ -210,30 +190,29 @@ function GrilledMenu() {
                 </li>
               </ul>
               <div className="grilledPriceBottom">
-                <div>
+                <div className="priceGrilledTableBottomFooter">
                   * שינויים בתפריט עד 48 שעות קודם האירוע.
                   <br />
                   * תינתן מקדמה בסגירה והיתרה בזמן אספקת ההזמנה.
                   <br /> * לאחר סגירת ההזמנה יש לוודא שההזמנה התקבלה.
                 </div>
               </div>
-            </Paper>
-          </Grid>
+          </Paper>
         </Grid>
-      </div>
-      <div className="inputGrilledMenu">
-        <Grid container>
-          <Grid item xs={9}>
+        <Grid item xs={9}>
+          <div className="grilledMenuTitle">
+          <h2>טופס הזמנה על האש</h2>
+          </div>
+
+          <div>
             <ProductCheckboxGrilled
               items={
                 (saladsProducts, TypesOfBreads, TypesOfGrilled, ExtrasOfGrilled)
               }
             />
-          </Grid>
+          </div>
         </Grid>
-      </div>
+      </Grid>
     </div>
   );
 }
-
-export default GrilledMenu;

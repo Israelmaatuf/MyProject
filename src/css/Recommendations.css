@@ -1,14 +1,8 @@
-.headerRecommendations{
-    background-color: black;
-    height: 114px;
-}
+
 .RecommendationsTitle{
     color:#7f0909;
-    display: inline-block;
     text-align: center;
-    position: relative;
-    top: 120px;
-    left: 420px;
+    margin-top: 50px;
     font-size: 46px;
     font-family: sans-serif;
   }
@@ -16,12 +10,13 @@
       text-align: center;
       width: 50%;
       height: 400px;
-      position: relative;
-      top: 200px;
-      left: 400px;
       color: white;
       background-color: black;
       direction: rtl;
+      margin-top: 50px;
+      padding-top: 40px;
+      position: relative;
+      left: 350px;
   }
   .textCarousel{
       width: 350px;
@@ -46,10 +41,10 @@
   .RecommendationsForm{
       width: 60%;
       position: relative;
-      left: 330px;
-      top: 200px;
+      left: 280px;
       direction: rtl;
       text-align: center;
+      margin-top: 40px;
   }
   .WriteARecommendation{
     height: 100px;
@@ -61,7 +56,6 @@
     text-align: center;
     background-color: #7f0909;
     position: relative;
-    margin-bottom: 100px;
 }
 .FormStyleRecommendations{
     border: 1px solid #7f0909;

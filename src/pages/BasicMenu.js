@@ -1,42 +1,32 @@
-import React from "react";
+import React from 'react';
+
 import ProductCheckbox from "../components/ProductCheckbox";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 import "../css/BasicMenu.css";
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-function BasicMenu({
-  saladsProducts,
-  VegetarianProducts,
-  FirstMenuFishMeet,
-  SecondMenuMeet,
-  ExtrasMenu,
-  SpecialMenuShabat,
-  VariousMenu
-}) {
-  const classes = useStyles();
-  return (
-    <div className="headerBasicMenu">
-      <div className="basicMenuTitle">
-        <h2>טופס הזמנה בייסיק</h2>
-      </div>
 
-      <div className="priceDivGrid">
-        <Grid container>
-          <Grid item xs={"auto"}>
-            <Paper className={classes.paper}>
-              <div className="basicMenuDiv">
+export default function BasicMenu(
+  {
+    saladsProducts,
+    VegetarianProducts,
+    FirstMenuFishMeet,
+    SecondMenuMeet,
+    ExtrasMenu,
+    SpecialMenuShabat,
+    VariousMenu
+  }
+) {
+  
+
+  return (
+    <div >
+      <Grid container >
+        
+        <Grid  item xs={3}>
+          <Paper className="MenuBasicGrid" >
+          <div className="basicMenuDiv">
                 <span>תפריט בייסיק</span>
               </div>
 
@@ -115,14 +105,16 @@ function BasicMenu({
                   <br /> * לאחר סגירת ההזמנה יש לוודא שההזמנה התקבלה.
                 </div>
               </div>
-            </Paper>
-          </Grid>
+          </Paper>
         </Grid>
+        <Grid item xs={9}>
+          
+          <div className="basicMenuTitle">
+        <h2>טופס הזמנה בייסיק</h2>
       </div>
-      <div className="inputBasicMenu">
-        <Grid container>
-          <Grid item xs={9}>
-            <ProductCheckbox
+      
+      <div >
+      <ProductCheckbox 
               items={
                 (saladsProducts,
                 VegetarianProducts,
@@ -133,11 +125,16 @@ function BasicMenu({
                 VariousMenu)
               }
             />
-          </Grid>
+            </div>
         </Grid>
-      </div>
+        
+          
+            
+          </Grid>
+          
+        
+        
+      
     </div>
   );
 }
-
-export default BasicMenu;

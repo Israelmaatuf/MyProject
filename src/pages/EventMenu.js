@@ -1,10 +1,11 @@
 import React from "react";
+
 import ProductCheckbox from "../components/ProductCheckbox";
-import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "../css/EventMenu.css";
-import {
+
+export default function EventMenu({
   saladsProducts,
   VegetarianProducts,
   FirstMenuFishMeet,
@@ -12,33 +13,13 @@ import {
   ExtrasMenu,
   SpecialMenuShabat,
   VariousMenu,
-} from "../Consts";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    width: "100%",
-    height: "840px",
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-function EventMenu() {
-  const classes = useStyles();
+}) {
   return (
-    <div className="headerEventsMenu">
-      <div className="eventsMenuTitle">
-        <h2>טופס הזמנה אירועים</h2>
-      </div>
-
-      <div className="priceEventsDivGrid">
-        <Grid container>
-          <Grid item xs={"auto"}>
-            <Paper className={classes.paper}>
-              <div className="eventsMenuDiv">
+    <div>
+      <Grid container>
+        <Grid item xs={3}>
+          <Paper className="MenuEventsGrid">
+          <div className="eventsMenuDiv">
                 <span>תפריט אירועים</span>
               </div>
 
@@ -249,13 +230,14 @@ function EventMenu() {
                   <br /> * לאחר סגירת ההזמנה יש לוודא שההזמנה התקבלה.
                 </div>
               </div>
-            </Paper>
-          </Grid>
+          </Paper>
         </Grid>
-      </div>
-      <div className="inputEventsMenu">
-        <Grid container>
-          <Grid item xs={9}>
+        <Grid item xs={9}>
+          <div className="eventsMenuTitle">
+            <h2>טופס הזמנה אירועים</h2>
+          </div>
+
+          <div>
             <ProductCheckbox
               items={
                 (saladsProducts,
@@ -267,11 +249,9 @@ function EventMenu() {
                 VariousMenu)
               }
             />
-          </Grid>
+          </div>
         </Grid>
-      </div>
+      </Grid>
     </div>
   );
 }
-
-export default EventMenu;

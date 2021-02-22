@@ -1,16 +1,16 @@
-.headerEvents{
+.headerBasic{
   background-color: black;
   height: 114px;
 }
 .titleEvents {
+  width: 100%;
   color:brown;
-  display: inline-block;
   text-align: right;
-  position: relative;
-  top: 150px;
-  left: 520px;
   font-size: 46px;
   font-family: sans-serif;
+  margin-top: 50px;
+  padding-right: 50px;
+  
   
 }
 .eventsP{
@@ -23,15 +23,10 @@
   font-weight: 400;
   line-height: 1.0em;
   letter-spacing: 0.5px;
-  position: relative;
-  top: 10px;
+  padding-top: 8px;
 }
 
-.buttoneventDiv{
-  position: relative;
-  float: right;
-}
-.buttonEvent{
+.buttonEvents{
   font-size: 17px;
   font-weight: 300;
   fill: #FFFFFF;
@@ -43,7 +38,7 @@
   border-radius: 0px 0px 0px 0px;
   padding: 10px 12px 10px 12px;
 }
-.buttonEvent:hover{
+.buttonEvents:hover{
   text-decoration: none;
   color: #eeff00;
   background-color: #662302;
@@ -52,18 +47,15 @@
   transition-duration: .3s;
   transition-property: transform;
 }
-.eventpic1{
-  float: left;
-  
-  position: relative;
-  top: -220px;
-  left: 30px;
+.eventspic1{
+  margin-left: 20px;
+  margin-top: 50px;
+  padding-bottom: 4px;
 }
-.CarouselImagesEvent{
+.CarouselImagesEvents{
   width: 100%;
-  float: left;
-  position: relative;
-  bottom: 100px;
+  margin-top: 50px;
+  
 }
 .imgEvents{
   margin: auto;

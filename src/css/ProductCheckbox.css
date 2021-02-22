@@ -2,19 +2,20 @@
     width: 320px;
     text-align: right;
     direction: rtl;
-    position: relative;
-    right: 30px;
-    float: right;
+    
+    
+    
 }
 .productTitle{
     text-align: right;
-    position: relative;
-    right: 50px;
+    margin-right: 50px;
+    
 }
 .orderFormMenu{
     width: 85%;
-    position: relative;
-    right: 50px;   
+    direction: rtl;
+    text-align: right;
+
 }
 .CommentsToOrderMenu{
     height: 100px;
@@ -25,8 +26,8 @@
     border: none;
     text-align: center;
     background-color: #7f0909;
-    position: relative;
-    right: 340px;
+    margin-right: 325px;
+
     margin-bottom: 100px;
 }
 .FormStyle{

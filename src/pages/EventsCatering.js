@@ -1,5 +1,5 @@
-import React from "react";
-import "../css/EventsCatering.css";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
@@ -16,8 +16,11 @@ import eventCarousel8 from "../images/Carousel/carouseleventpic8.jpeg";
 import eventCarousel9 from "../images/Carousel/carouseleventpic9.jpeg";
 import eventCarousel10 from "../images/Carousel/carouseleventpic10.jpeg";
 import eventCarousel11 from "../images/Carousel/carouseleventpic11.jpeg";
+import "../css/EventsCatering.css";
 
-function EventsCatering(props) {
+
+
+export default function EventsCatering(props) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -35,15 +38,28 @@ function EventsCatering(props) {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  
+
   return (
-    <div className="headerEvents">
-      <div className="titleEvents">
+    <div >
+      <Grid container >
+        
+        <Grid item xs={6}>
+          
+          <div className="eventspic1">
+          <Image src={eventpic1}></Image>
+      </div>
+          
+        </Grid>
+        <Grid item xs={6}>
+          
+          <div className="titleEvents">
         <div>
           <h2>קייטרינג אירועים</h2>
         </div>
-
+          
         <div className="eventsP">
-          <p>תפריט אירועים כולל את מנות התפריט שתבחרו, ובנוסף שירות ניהול</p>
+        <p>תפריט אירועים כולל את מנות התפריט שתבחרו, ובנוסף שירות ניהול</p>
           <p>האירוע – הפקה, עריכה והגשה בצורה מקצועית</p>
           <br />
           <p>תוכלו לבחור מנות ראשונות, מנות פתיחה, עיקריות קינוחים, שתיה</p>
@@ -56,16 +72,17 @@ function EventsCatering(props) {
           ולשביעות רצון קהל המוזמנים
           </p>
         </div>
-        <div className="buttoneventDiv">
-          <Link to="/EventMenu" className="buttonEvent">
+        <div>
+          <Link to="/EventMenu" className="buttonEvents">
             לתפריט והזמנה
           </Link>
         </div>
       </div>
-      <div className="eventpic1">
-        <Image src={eventpic1}></Image>
-      </div>
-      <div className="CarouselImagesEvent">
+          
+        </Grid>
+        <Grid item xs={12}>
+          
+          <div className="CarouselImagesEvents">
       <Carousel
         swipeable={false}
         centerMode={true}
@@ -80,7 +97,7 @@ function EventsCatering(props) {
         dotListClass="custom-dot-list-style"
         // itemClass="carousel-item-padding-10-px"
       >
-        <Image className="imgEvents" src={eventCarousel1}></Image>
+           <Image className="imgEvents" src={eventCarousel1}></Image>
         <Image className="imgEvents" src={eventCarousel2}></Image>
         <Image className="imgEvents" src={eventCarousel3}></Image>
         <Image className="imgEvents" src={eventCarousel4}></Image>
@@ -95,8 +112,9 @@ function EventsCatering(props) {
       </Carousel>
       ;
       </div>
+          
+        </Grid>
+      </Grid>
     </div>
   );
 }
-
-export default EventsCatering;

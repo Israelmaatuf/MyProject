@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
+import { Form, Col, Button } from "react-bootstrap";
+import { Image } from "react-bootstrap";
+import ContactImage from "../images/contactImage.jpg";
 import { useState } from "react";
 import { MdEmail  } from "react-icons/md";
 import { FaInstagramSquare , FaPhone , FaWhatsapp } from "react-icons/fa";
-import { Image } from "react-bootstrap";
-import ContactImage from "../images/contactImage.jpg";
-import { Form, Col, Button } from "react-bootstrap";
+import Grid from '@material-ui/core/Grid';
 import "../css/Contact.css";
 
-function Contact() {
+
+export default function Contact() {
   const [contact, setContact] = useState({
     name: "",
     phone: "",
@@ -24,16 +26,27 @@ function Contact() {
     evt.preventDefault();
     console.log(contact);
   }
+
   return (
-    <div className="headerContact">
-      <div className="contactConteiner">
-        <div className="contactTitle">
+    <div>
+      <Grid container>
+        <Grid item xs={12}>
+          
+          <div className="contactTitle">
         <h2>צרו קשר</h2>
         </div>
+          
+        </Grid>
+        <Grid item xs={6}>
+          
           <div >
             <Image className="contactImage" src={ContactImage}></Image>
           </div>
-        <div className="ContactForm">
+          
+        </Grid>
+        <Grid item xs={6}>
+          
+          <div className="ContactForm">
         <Form>
           <Form.Row>
             <Col>
@@ -113,14 +126,16 @@ function Contact() {
           <FaWhatsapp />                      
         </a>
       </div>
+      <br/><br/><br/>
       <div className="contactDetails">
-      <h3>להזמנות: 053-7302276</h3>
-      <h3>כתובת: צמח צדק 10/1, לוד</h3>
-      </div>
+      <h4>להזמנות: 053-7302276</h4>
+      <h4>כתובת: צמח צדק 10/1, לוד</h4>
       </div>
       
+          
+        </Grid>
+
+      </Grid>
     </div>
   );
 }
-
-export default Contact;

@@ -1,5 +1,5 @@
-import React from "react";
-import "../css/CateringBasic.css";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
@@ -16,8 +16,11 @@ import basicCarousel8 from "../images/Carousel/carouselpic8.jpeg";
 import basicCarousel9 from "../images/Carousel/carouselpic9.jpeg";
 import basicCarousel10 from "../images/Carousel/carouselpic10.jpeg";
 import basicCarousel11 from "../images/Carousel/carouselpic11.jpeg";
+import "../css/CateringBasic.css";
 
-function CateringBasic(props) {
+
+
+export default function CateringBasic(props) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -35,13 +38,26 @@ function CateringBasic(props) {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+  
+
   return (
-    <div className="headerBasic">
-      <div className="titleBasic">
+    <div >
+      <Grid container >
+        
+        <Grid item xs={6}>
+          
+          <div className="basicpic1">
+        <Image src={basicImage1}></Image>
+      </div>
+          
+        </Grid>
+        <Grid item xs={6}>
+          
+          <div className="titleBasic">
         <div>
           <h2>קייטרינג בייסיק</h2>
         </div>
-
+          <br/>
         <div className="basicP">
           <p>תפריט מנות מגוון לבחירה לאירועים ומסיבות ללא הפקה</p>
           <br />
@@ -51,16 +67,17 @@ function CateringBasic(props) {
             וסוגי המנות ולקבל את האוכל ארוז ביסודיות ובבטחה, טרי ומוכן להגשה
           </p>
         </div>
-        <div className="buttonbasicDiv">
+        <div>
           <Link to="/BasicMenu" className="buttonBasic">
             לתפריט והזמנה
           </Link>
         </div>
       </div>
-      <div className="basicpic1">
-        <Image src={basicImage1}></Image>
-      </div>
-      <div className="CarouselImagesBasic">
+          
+        </Grid>
+        <Grid item xs={12}>
+          
+          <div className="CarouselImagesBasic">
       <Carousel
         swipeable={false}
         centerMode={true}
@@ -90,8 +107,9 @@ function CateringBasic(props) {
       </Carousel>
       ;
       </div>
+          
+        </Grid>
+      </Grid>
     </div>
   );
 }
-
-export default CateringBasic;

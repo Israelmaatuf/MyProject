@@ -1,27 +1,30 @@
 
-.headerHome {
-  height: 630px;
-  width: 100%;
-  background-image: url("../images/backgroundhome.jpg");  
-}
 
-.titleHome {
+.homeTitle {
+  border: none;
+  width: 100%;
+  height: 700px;
   color: white;
-  display: inline-block;
+  background-image: url("../images/backgroundhome.jpg");
+}
+.homeTitleH1 {
+  color: white;
+  float: right;
   text-align: right;
-  position: relative;
-  top: 200px;
-  left: 700px;
-  font-size: 46px;
-  font-family: sans-serif;
+  margin-top: 150px;
+  margin-right: 80px;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.1em;
+  font-family: "Heebo", Sans-serif;
 }
 .buttonEvents {
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.2px;
-  fill: #D0A233;
-  color: #D0A233;
+  fill: #d0a233;
+  color: #d0a233;
   background-color: rgb(255, 255, 255, 0.01);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -30,17 +33,14 @@
 }
 .buttonEvents:hover {
   text-decoration: none;
-  color: #E0A800;
+  color: #e0a800;
 }
 .buttonDiv {
-  position: relative;
-  top: 250px;
-  right: 138px;
-  float: right;
+  margin-top: 80px;
 }
-.homeChef ,
+.homeChef,
 .homeDetails {
-  width: 40%;
+  width: 100%;
   font-size: 40px;
   font-weight: 200;
   line-height: 1.1em;
@@ -48,9 +48,8 @@
   color: black;
   text-align: right;
   float: right;
-  right: -70px;
-  position: relative;
-  top: 500px;
+  padding-right: 50px;
+  margin-top: 50px;
 }
 .homeP {
   font-size: 16px;
@@ -74,48 +73,35 @@
   text-decoration: none;
   color: #ffa500;
 }
-.pic1 {
-  float: left;
-  width: 40%;
-  position: relative;
-  top: 500px;
+.homePics {
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.pic2{
+.homePic2 {
   width: 674px;
   height: 350px;
-  position: relative;
-  top: 598px;
-  left: 1px;
-  float: left;
+  margin-top: 50px;
 }
-.pic3{
+.homePic3 {
   width: 674px;
   height: 350px;
-  position: relative;
-  top: 650px;
-  float: right;
   
 }
 .homeButtom {
   width: 674.5px;
   height: 350px;
   background-color: black;
-  float: right;
-  position: relative;
-  top: 650px;
+  margin-top: 50px;
   padding: 50px 50px 50px 50px;
-  
 }
 .homeButtom1 {
   width: 674.5px;
   height: 350px;
   background-color: black;
-  float: left;
-  position: relative;
-  top: 598px;
-  left: 1px;
+
   padding: 50px 50px 50px 50px;
-  
 }
 
 .homeButtomH2 {
@@ -136,9 +122,9 @@
   text-align: center;
   margin-top: 10px;
 }
-.homeButtomDiv{
+.homeButtomDiv {
   width: 80%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 17px;
   font-weight: 300;
   font-style: normal;
@@ -148,7 +134,4 @@
   box-sizing: border-box;
   margin-left: 60px;
   padding-left: 10px;
-  
 }
-
-

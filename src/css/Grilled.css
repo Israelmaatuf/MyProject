@@ -1,18 +1,16 @@
-.headerGrilled {
-  background-color: black;
-  height: 114px;
-}
+
 .titleGrilled {
-  color: brown;
-  display: inline-block;
+  width: 100%;
+  color:brown;
   text-align: right;
-  position: relative;
-  top: 150px;
-  left: 520px;
   font-size: 46px;
   font-family: sans-serif;
+  margin-top: 50px;
+  padding-right: 50px;
+  
+  
 }
-.grilledP {
+.grilledP{
   width: 100%;
   font-family: "Heebo", Sans-serif;
   font-size: 19px;
@@ -20,21 +18,16 @@
   color: black;
   margin-bottom: 14px;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.0em;
   letter-spacing: 0.5px;
-  position: relative;
-  top: 10px;
+  
 }
 
-.buttongrilledDiv {
-  position: relative;
-  float: right;
-}
-.buttonGrilled {
+.buttonGrilled{
   font-size: 17px;
   font-weight: 300;
-  fill: #ffffff;
-  color: #ffffff;
+  fill: #FFFFFF;
+  color: #FFFFFF;
   background-color: #662302;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
@@ -42,29 +35,29 @@
   border-radius: 0px 0px 0px 0px;
   padding: 10px 12px 10px 12px;
 }
-.buttonGrilled:hover {
+.buttonGrilled:hover{
   text-decoration: none;
   color: #eeff00;
   background-color: #662302;
   transform: scale(1.1);
   outline: -webkit-focus-ring-color auto 1px;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   transition-property: transform;
 }
-.grilledpic1 {
-  float: left;
-
-  position: relative;
-  top: -220px;
-  left: 30px;
-}
-.CarouselImagesGrilled {
+.grilledPic1{
   width: 100%;
-  float: left;
-  position: relative;
-  bottom: 100px;
+  height: 378px;
+  margin-left: 20px;
+  margin-top: 50px;
+  /* padding-bottom: 10px; */
+  
 }
-.imgGrilled {
+.CarouselImagesGrilled{
+  width: 100%;
+  margin-top: 50px;
+  
+}
+.imgGrilled{
   margin: auto;
   width: 100%;
   padding: 10px;

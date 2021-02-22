@@ -1,33 +1,25 @@
-.headerContact{
-    background-color: black;
-    height: 114px;
-}
-.contactConteiner{
-    width: 100%;
-    float:right;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+
   .contactTitle{
     color: #7f0909;
     direction: rtl;
     text-align: right;
-    position: relative;
+    margin-top: 130px;    
     font-size: 40px;
     font-family: "Heebo", Sans-serif;
     font-weight: 400;
     line-height: 1;
-    top: 120px;
-    right: 40px;
+    margin-right: 20px;
+    
   }
   .ContactForm{
-    width: 50%;
-    position: relative;
-    right: 30px;
-    bottom: 250px;
+    
+    margin-right: 20px;
+    margin-top: 50px;
     direction: rtl;
     text-align: center;
-    float: right;
+    
+    
 }
 .WriteAMassage{
   height: 100px;
@@ -38,7 +30,7 @@
   border: none;
   text-align: center;
   position: relative;
-  right: 262px;
+  right: 252px;
   bottom: 20px;
   background-color: #7f0909;
   position: relative;
@@ -50,16 +42,19 @@
   width: 600px;
   height: 450px;
   position: relative;
-  top: 80px;
-  left: 20px;
+  bottom: 50px;
+  margin-left: 20px;
+  
 }
 .iconsContact{
-  font-size: 25px;
+  font-size: 20px;
   color: black;
-  float: right;
+  margin-right: 20px;
+float: right;
+padding-left: 5px;
   position: relative;
-  left: 620px;
-  margin-left: 10px;
+  
+  
 }
 .iconsContact:hover{
   color: #7f0909;
@@ -67,12 +62,10 @@
 .contactDetails{
   color: #000000;
     font-family: "Rubik", Sans-serif;
-    font-size: 12px;
+    font-size: 10px;
+    margin-right: 20px;
+    float: right;
     font-weight: 400;
     line-height: 1.2em;
-    float: right;
-    position: relative;
-    left: 760px;
-    top: 60px;
     text-align: right;
 }

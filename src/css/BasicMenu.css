@@ -1,28 +1,23 @@
-.headerBasicMenu {
-  background-color: black;
-  height: 114px;
-}
 body {
   background-color: #f7f7f7;
 }
 
 .basicMenuTitle {
+  width: 100%;
   color: #7f0909;
   text-align: right;
-  position: relative;
-  top: 120px;
-  float: right;
-  left: 450px;
   font-size: 35px;
   font-family: "Heebo", Sans-serif;
   font-weight: 200;
-  padding: 0;
-  margin: 0;
+  float: right;  
   line-height: 1;
+  margin-top: 100px;
+  margin-right: 50px;
+  margin-bottom: 25px;
 }
-.priceDivGrid{
+.priceDivGrid {
   position: relative;
-  top: 130px;
+
   margin-left: 30px;
 }
 .SaladsBasic {
@@ -36,6 +31,10 @@ body {
   bottom: 400px;
   text-align: right;
 }
+.MenuBasicGrid{
+  width: 100%;
+  margin-left: 20px;
+}
 
 .basicMenuDiv {
   height: 55px;
@@ -46,6 +45,8 @@ body {
   padding: 12px 0px 0px 0px;
   text-align: center;
   font-size: 20px;
+  margin-top: 100px;
+  
 }
 
 .basicPrice {
@@ -57,6 +58,7 @@ body {
   text-align: center;
 }
 .priceTable {
+  
   position: relative;
   font-size: 16px;
   font-weight: 300;
@@ -67,21 +69,20 @@ body {
   border-bottom: 1px solid #7f0909;
 }
 .ulTablePrice {
+
   position: relative;
   padding: 10px 20px 20px 20px;
   text-align: right;
   color: #000000;
   list-style-type: none;
   line-height: 1;
-  
 }
 .spanSalat {
   direction: rtl;
-  margin-right: 10px;
+  margin-right: 5px;
   font-size: 16px;
 }
 .basicPriceBottom {
-  
   background-color: #ece8e8;
   position: relative;
 }
@@ -92,3 +93,4 @@ body {
   padding: 3px 0px 12px 0px;
   text-align: center;
 }
+
