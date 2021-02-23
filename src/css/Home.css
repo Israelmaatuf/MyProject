@@ -7,6 +7,38 @@
   color: white;
   background-image: url("../images/backgroundhome.jpg");
 }
+.homeTitleH1 > h1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.buttonDiv {
+  animation-duration: 2s;
+  animation-name: slidein1;
+  
+}
+@keyframes slidein1 {
+  from {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
 .homeTitleH1 {
   color: white;
   float: right;
@@ -35,9 +67,7 @@
   text-decoration: none;
   color: #e0a800;
 }
-.buttonDiv {
-  margin-top: 80px;
-}
+
 .homeChef,
 .homeDetails {
   width: 100%;

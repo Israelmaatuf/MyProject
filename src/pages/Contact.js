@@ -122,7 +122,7 @@ export default function Contact() {
         </a>
       </div>
       <div>
-        <a href="https://api.whatsapp.com/send?phone=0537302276" target="blank" className="iconsContact" >
+        <a href="https://api.whatsapp.com/send?phone=972537302276" target="blank" className="iconsContact" >
           <FaWhatsapp />                      
         </a>
       </div>

@@ -1,35 +1,31 @@
-.ProductCheckbox{
-    width: 320px;
-    text-align: right;
-    direction: rtl;
-    
-    
-    
+.ProductCheckbox {
+  width: 320px;
+  text-align: right;
+  direction: rtl;
+  
 }
-.productTitle{
-    text-align: right;
-    margin-right: 50px;
-    
+.productTitle {
+  text-align: right;
+  margin-right: 50px;
 }
-.orderFormMenu{
-    width: 85%;
-    direction: rtl;
-    text-align: right;
+.orderFormMenu {
+  width: 85%;
+  direction: rtl;
+  text-align: right;
+}
+.CommentsToOrderMenu {
+  height: 100px;
+  border: 1px solid #7f0909;
+}
+.buttonSendOrder {
+  width: 150px;
+  border: none;
+  text-align: center;
+  background-color: #7f0909;
+  margin-right: 325px;
 
+  margin-bottom: 100px;
 }
-.CommentsToOrderMenu{
-    height: 100px;
-    border: 1px solid #7f0909;
-}
-.buttonSendOrder{
-    width: 150px;
-    border: none;
-    text-align: center;
-    background-color: #7f0909;
-    margin-right: 325px;
-
-    margin-bottom: 100px;
-}
-.FormStyle{
-    border: 1px solid #7f0909;
+.FormStyle {
+  border: 1px solid #7f0909;
 }

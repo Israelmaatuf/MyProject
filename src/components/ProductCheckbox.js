@@ -15,8 +15,15 @@ import {
 } from "../Consts";
 import "../css/ProductCheckbox.css";
 
-const ProductCheckbox = ({ addItemHandler }) => {
-  const [items, setItems] = useState([]);
+const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian ,
+  addItemOfFirstMenu , addItemOfSecondMenu , addItemOfExtrasMenu
+}) => {
+  
+  const [selectedSalads, setSelectedSalads] = useState([]);
+  const [selectedVegetarian, setSelectedVegetarian] = useState([]);
+  const [selectedFirstMenu, setSelectedFirstMenu] = useState([]);
+  const [selectedSecondMenu, setSelectedSecondMenu] = useState([]);
+  const [selectedExtrasMenu, setSelectedExtrasMenu] = useState([]);
   const [input, setInput] = useState({
     name: "",
     phone: "",
@@ -38,14 +45,64 @@ const ProductCheckbox = ({ addItemHandler }) => {
     evt.preventDefault();
     console.log(input);
   }
-  addItemHandler = (e) => {
-    let itemsArr = [...items];
+  
+  addItemOfSalads = (e) => {
+    let itemsArr = [...selectedSalads];
     if (e.target.checked) {
       itemsArr.push(e.target.value);
-      setItems(itemsArr);
+      setSelectedSalads(itemsArr);
+      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
-      setItems(itemsArr);
+      setSelectedSalads(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfVegetarian = (e) => {
+    let itemsArr = [...selectedVegetarian];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedVegetarian(itemsArr);
+      
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedVegetarian(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfFirstMenu = (e) => {
+    let itemsArr = [...selectedFirstMenu];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedFirstMenu(itemsArr);
+      
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedFirstMenu(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfSecondMenu = (e) => {
+    let itemsArr = [...selectedSecondMenu];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedSecondMenu(itemsArr);
+      
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedSecondMenu(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfExtrasMenu = (e) => {
+    let itemsArr = [...selectedExtrasMenu];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedExtrasMenu(itemsArr);
+      
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedExtrasMenu(itemsArr);
     }
     console.log(itemsArr);
   };
@@ -60,7 +117,8 @@ const ProductCheckbox = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfSalads}
+              disabled={selectedSalads.length >= 6 && !selectedSalads.includes(index)}
             />
           </FormGroup>
         </FormControl>
@@ -77,7 +135,8 @@ const ProductCheckbox = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfVegetarian}
+              disabled={selectedVegetarian.length >= 3 && !selectedVegetarian.includes(index)}
             />
           </FormGroup>
         </FormControl>
@@ -94,7 +153,8 @@ const ProductCheckbox = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfFirstMenu}
+              disabled={selectedFirstMenu.length >= 3 && !selectedFirstMenu.includes(index)}
             />
           </FormGroup>
         </FormControl>
@@ -111,7 +171,8 @@ const ProductCheckbox = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfSecondMenu}
+              disabled={selectedSecondMenu.length >= 3 && !selectedSecondMenu.includes(index)}
             />
           </FormGroup>
         </FormControl>
@@ -128,7 +189,8 @@ const ProductCheckbox = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfExtrasMenu}
+              disabled={selectedExtrasMenu.length >= 3 && !selectedExtrasMenu.includes(index)}
             />
           </FormGroup>
         </FormControl>

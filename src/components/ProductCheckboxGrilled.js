@@ -12,8 +12,9 @@ import {
 } from "../Consts";
 import "../css/ProductCheckbox.css";
 
-const ProductCheckboxGrilled = ({ addItemHandler }) => {
+const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
   const [items , setItems] = useState([]);
+  const [selectedSalads, setSelectedSalads] = useState([]);
   const [input, setInput] = useState({
     name: "",
     phone: "",
@@ -46,6 +47,18 @@ const ProductCheckboxGrilled = ({ addItemHandler }) => {
     }
     console.log(itemsArr);
   };
+  addItemOfSalads = (e) => {
+    let itemsArr = [...selectedSalads];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedSalads(itemsArr);
+      
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedSalads(itemsArr);
+    }
+    console.log(itemsArr);
+  };
 
   const salads = saladsProducts.map((index) => {
     return (
@@ -57,7 +70,8 @@ const ProductCheckboxGrilled = ({ addItemHandler }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfSalads}
+              disabled={selectedSalads.length >= 6 && !selectedSalads.includes(index)}
             />
           </FormGroup>
         </FormControl>

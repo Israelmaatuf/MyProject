@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="Footer">
       <div>
         <a
-          href="https://api.whatsapp.com/send?phone=0537302276"
+          href="https://api.whatsapp.com/send?phone=972537302276"
           target="blank"
           className="iconsFooter"
         >
