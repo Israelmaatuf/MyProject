@@ -11,11 +11,14 @@ import "../css/Home.css";
 
 export default function Home() {
   
+    
+  
 
   return (
-    <div className="Home">
+    <div className="Home" >
+      
       <Grid container >
-        <Grid item xs={12} >
+        <Grid item xs={12}  >
           <div className="homeTitle">
             <div className="homeTitleH1">
               <h1>שף פנחס</h1>

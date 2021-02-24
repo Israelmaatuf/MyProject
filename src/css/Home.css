@@ -1,5 +1,3 @@
-
-
 .homeTitle {
   border: none;
   width: 100%;
@@ -26,7 +24,6 @@
 .buttonDiv {
   animation-duration: 2s;
   animation-name: slidein1;
-  
 }
 @keyframes slidein1 {
   from {
@@ -110,24 +107,23 @@
   box-sizing: border-box;
 }
 .homePic2 {
-  width: 674px;
+  width: 45%;
   height: 350px;
   margin-top: 50px;
 }
 .homePic3 {
-  width: 674px;
+  width: 45%;
   height: 350px;
-  
 }
 .homeButtom {
-  width: 674.5px;
+  width: 100%;
   height: 350px;
   background-color: black;
   margin-top: 50px;
   padding: 50px 50px 50px 50px;
 }
 .homeButtom1 {
-  width: 674.5px;
+  width: 100%;
   height: 350px;
   background-color: black;
 

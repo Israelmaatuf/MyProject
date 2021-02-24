@@ -1,62 +1,63 @@
-
-.RecommendationsTitle{
-    color:#7f0909;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 46px;
-    font-family: sans-serif;
-  }
-  .RecommendationsCarousel{
-      text-align: center;
-      width: 50%;
-      height: 400px;
-      color: white;
-      background-color: black;
-      direction: rtl;
-      margin-top: 50px;
-      padding-top: 40px;
-      position: relative;
-      left: 350px;
-  }
-  .textCarousel{
-      width: 350px;
-      direction: rtl;
-      text-align: center;
-      position: relative;
-      right: 150px;
-      top: 40px;
-    color: #FFFFFF;
-    font-size: 17px;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.5em;
-  }
-  .RecommendationsFooter{
-    color: #FFA500;
-    font-family: "Heebo", Sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    
-  }
-  .RecommendationsForm{
-      width: 60%;
-      position: relative;
-      left: 280px;
-      direction: rtl;
-      text-align: center;
-      margin-top: 40px;
-  }
-  .WriteARecommendation{
-    height: 100px;
-    border: 1px solid #7f0909;
+.RecommendationsTitle {
+  color: #7f0909;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 46px;
+  font-family: sans-serif;
 }
-.ButtonSendARecommendation{
-    width: 150px;
-    border: none;
-    text-align: center;
-    background-color: #7f0909;
-    position: relative;
+.RecommendationsCarousel {
+  text-align: center;
+  width: 50%;
+  height: 400px;
+  color: white;
+  background-color: black;
+  direction: rtl;
+  margin-top: 50px;
+  padding-top: 40px;
+  position: relative;
+  left: 350px;
 }
-.FormStyleRecommendations{
-    border: 1px solid #7f0909;
+.textCarousel {
+  width: 50%;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+  right: 170px;
+  top: 40px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+}
+.RecommendationsFooter {
+  color: #ffa500;
+  font-family: "Heebo", Sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.RecommendationsForm {
+  width: 60%;
+  position: relative;
+  left: 280px;
+  direction: rtl;
+  text-align: center;
+  margin-top: 40px;
+}
+.WriteARecommendation {
+  height: 100px;
+  border: 1px solid #7f0909;
+}
+.ButtonSendARecommendation {
+  width: 20%;
+  border: none;
+  text-align: center;
+  background-color: #7f0909;
+  position: relative;
+}
+.ButtonSendARecommendation:hover {
+  background-color: #ffa500;
+}
+.FormStyleRecommendations {
+  border: 1px solid #7f0909;
 }

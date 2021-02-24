@@ -1,25 +1,22 @@
-
 .OrderTitle {
-    color: brown;
-    text-align: center;
-    position: relative;
-    top: 50px;
-    font-size: 35px;
-    font-family: "Heebo", Sans-serif;
-    font-weight: 200;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    
-  }
-  
-  .imgLinks{
-      width: 300px;
-      height: 310px;
-      margin-top: 130px;
-      margin-bottom: 150px;
-      margin-left: 70px;
-      border: 1px solid black;
-      border-radius: 8px;
-  }
-  
+  color: brown;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-size: 35px;
+  font-family: "Heebo", Sans-serif;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.imgLinks {
+  width: 75%;
+  height: 310px;
+  margin-top: 130px;
+  margin-bottom: 150px;
+  margin-left: 70px;
+  border: 1px solid black;
+  border-radius: 8px;
+}

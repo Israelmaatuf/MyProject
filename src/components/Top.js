@@ -1,6 +1,6 @@
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Grilled from "../pages/Grilled";
+import Grilled from "../pages/GrilledCatering";
 import CateringBasic from "../pages/CateringBasic";
 import EventsCatering from "../pages/EventsCatering";
 import Contact from "../pages/Contact";

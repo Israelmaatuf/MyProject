@@ -1,5 +1,5 @@
-import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import React from "react";
+import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
@@ -17,8 +17,6 @@ import eventCarousel9 from "../images/Carousel/carouseleventpic9.jpeg";
 import eventCarousel10 from "../images/Carousel/carouseleventpic10.jpeg";
 import eventCarousel11 from "../images/Carousel/carouseleventpic11.jpeg";
 import "../css/EventsCatering.css";
-
-
 
 export default function EventsCatering(props) {
   const responsive = {
@@ -38,81 +36,70 @@ export default function EventsCatering(props) {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
-  
 
   return (
-    <div >
-      <Grid container >
-        
+    <div>
+      <Grid container>
         <Grid item xs={6}>
-          
           <div className="eventspic1">
-          <Image src={eventpic1}></Image>
-      </div>
-          
+            <Image src={eventpic1}></Image>
+          </div>
         </Grid>
         <Grid item xs={6}>
-          
           <div className="titleEvents">
-        <div>
-          <h2>קייטרינג אירועים</h2>
-        </div>
-          
-        <div className="eventsP">
-        <p>תפריט אירועים כולל את מנות התפריט שתבחרו, ובנוסף שירות ניהול</p>
-          <p>האירוע – הפקה, עריכה והגשה בצורה מקצועית</p>
-          <br />
-          <p>תוכלו לבחור מנות ראשונות, מנות פתיחה, עיקריות קינוחים, שתיה</p>
-          <p>אלכוהול ולהתאים תפריט ברמת תמחור ומסגרות תקציב נוחות</p>
-          <br/>
-          <p>
-          כשאתם בוחרים בשף פנחס אתם יכולים להיות בטוחים שהכל יוגש בזמן
-          </p>
-          <p>
-          ולשביעות רצון קהל המוזמנים
-          </p>
-        </div>
-        <div>
-          <Link to="/EventMenu" className="buttonEvents">
-            לתפריט והזמנה
-          </Link>
-        </div>
-      </div>
-          
+            <h2>קייטרינג אירועים</h2>
+
+            <div className="eventsP">
+              <p>
+                תפריט אירועים כולל את מנות התפריט שתבחרו, ובנוסף שירות ניהול
+              </p>
+              <p>האירוע – הפקה, עריכה והגשה בצורה מקצועית</p>
+              <br />
+              <p>תוכלו לבחור מנות ראשונות, מנות פתיחה, עיקריות קינוחים, שתיה</p>
+              <p>אלכוהול ולהתאים תפריט ברמת תמחור ומסגרות תקציב נוחות</p>
+              <br />
+              <p>
+                כשאתם בוחרים בשף פנחס אתם יכולים להיות בטוחים שהכל יוגש בזמן
+              </p>
+              <p>ולשביעות רצון קהל המוזמנים</p>
+            </div>
+            <div>
+              <Link to="/EventMenu" className="buttonEvents">
+                לתפריט והזמנה
+              </Link>
+            </div>
+          </div>
         </Grid>
         <Grid item xs={12}>
-          
           <div className="CarouselImagesEvents">
-      <Carousel
-        swipeable={false}
-        centerMode={true}
-        showDots={true}
-        responsive={responsive}
-        autoPlay={props.deviceType !== "mobile" ? true : false}
-        autoPlaySpeed={3000}
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={props.deviceType}
-        dotListClass="custom-dot-list-style"
-        // itemClass="carousel-item-padding-10-px"
-      >
-           <Image className="imgEvents" src={eventCarousel1}></Image>
-        <Image className="imgEvents" src={eventCarousel2}></Image>
-        <Image className="imgEvents" src={eventCarousel3}></Image>
-        <Image className="imgEvents" src={eventCarousel4}></Image>
-        <Image className="imgEvents" src={eventCarousel5}></Image>
-        <Image className="imgEvents" src={eventCarousel6}></Image>
-        <Image className="imgEvents" src={eventCarousel7}></Image>
-        <Image className="imgEvents" src={eventCarousel8}></Image>
-        <Image className="imgEvents" src={eventCarousel9}></Image>
-        <Image className="imgEvents" src={eventCarousel10}></Image>
-        <Image className="imgEvents" src={eventCarousel11}></Image>
-        
-      </Carousel>
-      ;
-      </div>
-          
+            <Carousel
+              swipeable={false}
+              centerMode={true}
+              showDots={true}
+              responsive={responsive}
+              autoPlay={props.deviceType !== "mobile" ? true : false}
+              autoPlaySpeed={3000}
+              transitionDuration={500}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              deviceType={props.deviceType}
+              dotListClass="custom-dot-list-style"
+              // itemClass="carousel-item-padding-10-px"
+            >
+              <Image className="imgEvents" src={eventCarousel1}></Image>
+              <Image className="imgEvents" src={eventCarousel2}></Image>
+              <Image className="imgEvents" src={eventCarousel3}></Image>
+              <Image className="imgEvents" src={eventCarousel4}></Image>
+              <Image className="imgEvents" src={eventCarousel5}></Image>
+              <Image className="imgEvents" src={eventCarousel6}></Image>
+              <Image className="imgEvents" src={eventCarousel7}></Image>
+              <Image className="imgEvents" src={eventCarousel8}></Image>
+              <Image className="imgEvents" src={eventCarousel9}></Image>
+              <Image className="imgEvents" src={eventCarousel10}></Image>
+              <Image className="imgEvents" src={eventCarousel11}></Image>
+            </Carousel>
+            ;
+          </div>
         </Grid>
       </Grid>
     </div>

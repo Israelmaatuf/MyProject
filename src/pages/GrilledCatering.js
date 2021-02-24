@@ -3,7 +3,6 @@ import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
-
 import "react-multi-carousel/lib/styles.css";
 import grilledpic1 from "../images/grilledpic1.jpg";
 import grilledCarousel1 from "../images/Carousel/carouselgrilledpic1.jpeg";
@@ -17,9 +16,9 @@ import grilledCarousel8 from "../images/Carousel/carouselgrilledpic8.jpeg";
 import grilledCarousel9 from "../images/Carousel/carouselgrilledpic9.jpeg";
 import grilledCarousel10 from "../images/Carousel/carouselgrilledpic10.jpeg";
 import grilledCarousel11 from "../images/Carousel/carouselgrilledpic11.jpeg";
-import "../css/Grilled.css";
+import "../css/GrilledCatering.css";
 
-export default function Grilled(props) {
+export default function GrilledCatering(props) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },

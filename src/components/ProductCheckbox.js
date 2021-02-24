@@ -15,10 +15,14 @@ import {
 } from "../Consts";
 import "../css/ProductCheckbox.css";
 
-const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian ,
-  addItemOfFirstMenu , addItemOfSecondMenu , addItemOfExtrasMenu
+const ProductCheckbox = ({
+  addItemHandler,
+  addItemOfSalads,
+  addItemOfVegetarian,
+  addItemOfFirstMenu,
+  addItemOfSecondMenu,
+  addItemOfExtrasMenu,
 }) => {
-  
   const [selectedSalads, setSelectedSalads] = useState([]);
   const [selectedVegetarian, setSelectedVegetarian] = useState([]);
   const [selectedFirstMenu, setSelectedFirstMenu] = useState([]);
@@ -45,13 +49,12 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     evt.preventDefault();
     console.log(input);
   }
-  
+
   addItemOfSalads = (e) => {
     let itemsArr = [...selectedSalads];
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedSalads(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedSalads(itemsArr);
@@ -63,7 +66,6 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedVegetarian(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedVegetarian(itemsArr);
@@ -75,7 +77,6 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedFirstMenu(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedFirstMenu(itemsArr);
@@ -87,7 +88,6 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedSecondMenu(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedSecondMenu(itemsArr);
@@ -99,7 +99,6 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedExtrasMenu(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedExtrasMenu(itemsArr);
@@ -118,7 +117,9 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfSalads}
-              disabled={selectedSalads.length >= 6 && !selectedSalads.includes(index)}
+              disabled={
+                selectedSalads.length >= 6 && !selectedSalads.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -136,7 +137,10 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfVegetarian}
-              disabled={selectedVegetarian.length >= 3 && !selectedVegetarian.includes(index)}
+              disabled={
+                selectedVegetarian.length >= 3 &&
+                !selectedVegetarian.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -154,7 +158,10 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfFirstMenu}
-              disabled={selectedFirstMenu.length >= 3 && !selectedFirstMenu.includes(index)}
+              disabled={
+                selectedFirstMenu.length >= 3 &&
+                !selectedFirstMenu.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -172,7 +179,10 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfSecondMenu}
-              disabled={selectedSecondMenu.length >= 3 && !selectedSecondMenu.includes(index)}
+              disabled={
+                selectedSecondMenu.length >= 3 &&
+                !selectedSecondMenu.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -190,7 +200,10 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfExtrasMenu}
-              disabled={selectedExtrasMenu.length >= 3 && !selectedExtrasMenu.includes(index)}
+              disabled={
+                selectedExtrasMenu.length >= 3 &&
+                !selectedExtrasMenu.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -236,14 +249,14 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
     <div>
       <h6 className="productTitle">סלטים (6 לבחירה)</h6>
       <br />
-      <FormGroup aria-label="position" row>
+      <FormGroup dir="rtl" aria-label="position" row>
         {salads}
       </FormGroup>
       <br />
       <div>
         <h6 className="productTitle">מנה ראשונה - צמחוני (3 לבחירה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {vegetarian}
         </FormGroup>
       </div>
@@ -251,7 +264,7 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
       <div>
         <h6 className="productTitle">מנה ראשונה בשרי/דגים (3 לבחירה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {firstMenu}
         </FormGroup>
       </div>
@@ -259,7 +272,7 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
       <div>
         <h6 className="productTitle">עיקריות (3 לבחירה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {secondMenu}
         </FormGroup>
       </div>
@@ -267,7 +280,7 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
       <div>
         <h6 className="productTitle">תוספות (3 לבחירה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {extrasMenu}
         </FormGroup>
       </div>
@@ -275,7 +288,7 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
       <div>
         <h6 className="productTitle">המיוחדים של שבת</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {specialMenu}
         </FormGroup>
       </div>
@@ -283,7 +296,7 @@ const ProductCheckbox = ({ addItemHandler ,addItemOfSalads , addItemOfVegetarian
       <div>
         <h6 className="productTitle">שונות (בתוספת תשלום)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {variousMenu}
         </FormGroup>
       </div>

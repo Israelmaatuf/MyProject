@@ -1,32 +1,26 @@
-
-
-  .contactTitle{
-    color: #7f0909;
-    direction: rtl;
-    text-align: right;
-    margin-top: 130px;    
-    font-size: 40px;
-    font-family: "Heebo", Sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    margin-right: 20px;
-    
-  }
-  .ContactForm{
-    
-    margin-right: 20px;
-    margin-top: 50px;
-    direction: rtl;
-    text-align: center;
-    
-    
+.contactTitle {
+  color: #7f0909;
+  direction: rtl;
+  text-align: right;
+  margin-top: 130px;
+  font-size: 40px;
+  font-family: "Heebo", Sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 20px;
 }
-.WriteAMassage{
+.ContactForm {
+  margin-right: 20px;
+  margin-top: 50px;
+  direction: rtl;
+  text-align: center;
+}
+.WriteAMassage {
   height: 100px;
   border: 1px solid #7f0909;
 }
-.ButtonSendAMassage{
-  width: 150px;
+.ButtonSendAMassage {
+  width: 20%;
   border: none;
   text-align: center;
   position: relative;
@@ -35,37 +29,37 @@
   background-color: #7f0909;
   position: relative;
 }
-.FormStyleContact{
+.ButtonSendAMassage:hover {
+  background-color: #ffa500;
+}
+.FormStyleContact {
   border: 1px solid #7f0909;
 }
-.contactImage{
-  width: 600px;
+.contactImage {
+  width: 90%;
   height: 450px;
   position: relative;
   bottom: 50px;
   margin-left: 20px;
-  
 }
-.iconsContact{
+.iconsContact {
   font-size: 20px;
   color: black;
   margin-right: 20px;
-float: right;
-padding-left: 5px;
+  float: right;
+  padding-left: 5px;
   position: relative;
-  
-  
 }
-.iconsContact:hover{
+.iconsContact:hover {
   color: #7f0909;
 }
-.contactDetails{
+.contactDetails {
   color: #000000;
-    font-family: "Rubik", Sans-serif;
-    font-size: 10px;
-    margin-right: 20px;
-    float: right;
-    font-weight: 400;
-    line-height: 1.2em;
-    text-align: right;
+  font-family: "Rubik", Sans-serif;
+  font-size: 10px;
+  margin-right: 20px;
+  float: right;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: right;
 }

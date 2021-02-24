@@ -21,7 +21,6 @@
   color:#E0A800;
 }
 .DropDown{
-  width: auto;
   background-color: black;
   color: white;
   border: none;
@@ -42,7 +41,7 @@
 
 .logo{
   vertical-align: middle;
-  width: 80px;
+  width: 7%;
   height: 80px;
   float: left;
   border-radius: 50%;

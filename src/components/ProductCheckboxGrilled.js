@@ -8,13 +8,21 @@ import {
   saladsProducts,
   TypesOfBreads,
   TypesOfGrilled,
-  ExtrasOfGrilled
+  ExtrasOfGrilled,
 } from "../Consts";
 import "../css/ProductCheckbox.css";
 
-const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
-  const [items , setItems] = useState([]);
+const ProductCheckboxGrilled = ({
+  addItemHandler,
+  addItemOfSalads,
+  addItemOfBreads,
+  addItemOfGrilled,
+  addItemOfExtras,
+}) => {
   const [selectedSalads, setSelectedSalads] = useState([]);
+  const [selectedBreads, setSelectedBreads] = useState([]);
+  const [selectedGrilled, setSelectedGrilled] = useState([]);
+  const [selectedExtras, setSelectedExtras] = useState([]);
   const [input, setInput] = useState({
     name: "",
     phone: "",
@@ -36,30 +44,51 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
     evt.preventDefault();
     console.log(input);
   }
-  addItemHandler = (e) => {
-    let itemsArr = [...items];
-    if (e.target.checked) {
-      itemsArr.push(e.target.value);
-      setItems(itemsArr);
-    } else {
-      itemsArr = itemsArr.filter((value) => value !== e.target.value);
-      setItems(itemsArr);
-    }
-    console.log(itemsArr);
-  };
+
   addItemOfSalads = (e) => {
     let itemsArr = [...selectedSalads];
     if (e.target.checked) {
       itemsArr.push(e.target.value);
       setSelectedSalads(itemsArr);
-      
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedSalads(itemsArr);
     }
     console.log(itemsArr);
   };
-
+  addItemOfBreads = (e) => {
+    let itemsArr = [...selectedBreads];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedBreads(itemsArr);
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedBreads(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfGrilled = (e) => {
+    let itemsArr = [...selectedGrilled];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedGrilled(itemsArr);
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedGrilled(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfExtras = (e) => {
+    let itemsArr = [...selectedExtras];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedExtras(itemsArr);
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedExtras(itemsArr);
+    }
+    console.log(itemsArr);
+  };
   const salads = saladsProducts.map((index) => {
     return (
       <div key={index} className="ProductCheckbox">
@@ -71,7 +100,9 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
               control={<Checkbox color="primary" />}
               label={index}
               onChange={addItemOfSalads}
-              disabled={selectedSalads.length >= 6 && !selectedSalads.includes(index)}
+              disabled={
+                selectedSalads.length >= 6 && !selectedSalads.includes(index)
+              }
             />
           </FormGroup>
         </FormControl>
@@ -88,7 +119,7 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfBreads}
             />
           </FormGroup>
         </FormControl>
@@ -105,7 +136,7 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfGrilled}
             />
           </FormGroup>
         </FormControl>
@@ -122,7 +153,7 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfExtras}
             />
           </FormGroup>
         </FormControl>
@@ -134,14 +165,14 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
     <div>
       <h6 className="productTitle">סלטים (6 לבחירה)</h6>
       <br />
-      <FormGroup aria-label="position" row>
+      <FormGroup dir="rtl" aria-label="position" row>
         {salads}
       </FormGroup>
       <br />
       <div>
         <h6 className="productTitle">מספר סוגי לחמים (ללא הגבלה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {typeBreads}
         </FormGroup>
       </div>
@@ -149,7 +180,7 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
       <div>
         <h6 className="productTitle">בשרים על האש (ללא הגבלה)</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {typeGrilled}
         </FormGroup>
       </div>
@@ -157,7 +188,7 @@ const ProductCheckboxGrilled = ({ addItemHandler , addItemOfSalads }) => {
       <div>
         <h6 className="productTitle">תוספות</h6>
         <br />
-        <FormGroup aria-label="position" row>
+        <FormGroup dir="rtl" aria-label="position" row>
           {extrasGrilled}
         </FormGroup>
       </div>

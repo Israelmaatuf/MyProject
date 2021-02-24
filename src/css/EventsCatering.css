@@ -1,7 +1,4 @@
-.headerBasic{
-  background-color: black;
-  height: 114px;
-}
+
 .titleEvents {
   width: 100%;
   color:brown;
@@ -9,9 +6,7 @@
   font-size: 46px;
   font-family: sans-serif;
   margin-top: 50px;
-  padding-right: 50px;
-  
-  
+  padding-right: 50px;  
 }
 .eventsP{
   width: 100%;
