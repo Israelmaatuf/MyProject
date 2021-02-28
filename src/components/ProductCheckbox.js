@@ -244,7 +244,9 @@ const ProductCheckbox = ({
       </div>
     );
   });
-
+  const isDisable = input.name.length === 0 || input.phone.length === 0 || input.email.length === 0 
+  || input.address.length === 0 || input.NumberOfServings.length === 0 || input.date.length === 0
+  || input.day.length === 0 || input.hour.length === 0 ;
   return (
     <div>
       <h6 className="productTitle">סלטים (6 לבחירה)</h6>
@@ -413,6 +415,7 @@ const ProductCheckbox = ({
           onClick={HandleSubmit}
           type="submit"
           className="buttonSendOrder"
+          disabled={isDisable}
         >
           שלח
         </Button>

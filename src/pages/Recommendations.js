@@ -21,7 +21,8 @@ export default function Recommendations() {
     evt.preventDefault();
     console.log(recommendation);
   }
-
+  const isDisable = recommendation.name.length === 0 || recommendation.phone.length === 0 
+  || recommendation.email.length === 0 || recommendation.Recommendation.length === 0;
   return (
     <div>
       <Grid container>
@@ -169,6 +170,7 @@ export default function Recommendations() {
               onClick={HandleSubmit}
               type="submit"
               className="ButtonSendARecommendation"
+              disabled={isDisable}
             >
               שלח המלצה
             </Button>
