@@ -48,9 +48,9 @@ export default function GrilledCatering(props) {
         <Grid item xs={6}>
           <div className="titleGrilled">
             <div>
-              <h2>בשרים על האש</h2>
+              <h2 data-aos="fade-down" data-aos-duration="1000">בשרים על האש</h2>
             </div>
-            <br />
+            {/* <br /> */}
             <div className="grilledP">
               <p>
                 תפריט בשרים איכותיים הנצלים על גריל במקום האירוע, מסופקים עם
@@ -68,7 +68,7 @@ export default function GrilledCatering(props) {
               </p>
               <p>לכם להתפנק בבשרים איכותיים ועסיסיים</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000" >
               <Link to="/GrilledMenu" className="buttonGrilled">
                 לתפריט והזמנה
               </Link>

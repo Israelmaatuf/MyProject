@@ -55,9 +55,9 @@ export default function CateringBasic(props) {
           
           <div className="titleBasic">
         <div>
-          <h2>קייטרינג בייסיק</h2>
+          <h2 data-aos="fade-down" data-aos-duration="1000">קייטרינג בייסיק</h2>
         </div>
-          <br/>
+          {/* <br/> */}
         <div className="basicP">
           <p>תפריט מנות מגוון לבחירה לאירועים ומסיבות ללא הפקה</p>
           <br />
@@ -67,8 +67,8 @@ export default function CateringBasic(props) {
             וסוגי המנות ולקבל את האוכל ארוז ביסודיות ובבטחה, טרי ומוכן להגשה
           </p>
         </div>
-        <div>
-          <Link to="/BasicMenu" className="buttonBasic">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <Link  to="/BasicMenu" className="buttonBasic">
             לתפריט והזמנה
           </Link>
         </div>

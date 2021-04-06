@@ -47,7 +47,7 @@ export default function EventsCatering(props) {
         </Grid>
         <Grid item xs={6}>
           <div className="titleEvents">
-            <h2>קייטרינג אירועים</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">קייטרינג אירועים</h2>
 
             <div className="eventsP">
               <p>
@@ -63,7 +63,7 @@ export default function EventsCatering(props) {
               </p>
               <p>ולשביעות רצון קהל המוזמנים</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               <Link to="/EventMenu" className="buttonEvents">
                 לתפריט והזמנה
               </Link>
