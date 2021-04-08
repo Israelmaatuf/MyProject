@@ -1,10 +1,30 @@
 import React from "react";
+import { Image } from "react-bootstrap";
+import Grid from "@material-ui/core/Grid";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import AboutPic from "../images/aboutpic2.jpg";
 import "../css/About.css";
 
-function About() {
+const styles = (theme) => ({
+  root: {
+    flexGrow: 1,
+  }
+  
+});
+
+function About(props) {
+  const { classes } = props;
+
   return (
-    <div className="headerAbout">
+    <div className={classes.root}>
       
+    <div className="headerAbout">
+    <Grid container>
+    <Grid item xs={12} sm={6}>
+    <Image className="aboutPic" src={AboutPic}></Image>
+    </Grid>
+    <Grid item xs={12} sm={6}>
       <div className="titleAbout">
       
       <h2>אודותינו</h2>
@@ -33,11 +53,15 @@ function About() {
         </p>
         <br/>
       </div>
-      
-      
+      </Grid>
+      </Grid>  
     </div>
     
+    </div>    
   );
 }
 
-export default About;
+About.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(About);

@@ -1,5 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
 import homeImage1 from "../images/homepic1.jpg";
@@ -12,10 +14,18 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-export default function Home() {
+const styles = (theme) => ({
+  root: {
+    flexGrow: 1,
+  }
+  
+});
+
+function Home(props) {
+  const { classes } = props;
   return (
-    <div className="Home">
-      <Grid lg={12} item container>
+    <div className={classes.root}>
+      <Grid container spacing={24}>
         <Grid item xs={12}>
           <div className="homeTitle">
             <div className="homeTitleH1">
@@ -30,8 +40,9 @@ export default function Home() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={6} >
-          <div >
+
+        <Grid item xs={12} sm={6}>
+          <div>
             <Image
               data-aos="flip-left"
               data-aos-duration="1000"
@@ -48,33 +59,35 @@ export default function Home() {
             ></Image>
           </div>
         </Grid>
-        <Grid  item xs={6}>
-          <div>
+        <Grid item xs={12} sm={6}>
+          <div className="content-home">
             <div className="homeDetails">
               <h2>שף פנחס</h2>
               <h2>כל הטעמים מוזמנים</h2>
-
-              <p className="homeP">
+            </div>
+            <div className="homeP">
+              <p>
                 חברת קייטרינג 'שף פנחס' מספקת שירותי הסעדה לאירועים מזה למעלה
                 מחמש עשרה שנה. התפריט המגוון שמורכב מחומרי גלם טריים ואיכותיים
                 ותחת השגחת כשרות מהודרת, גרם לאלפי לקוחות מרוצים לשוב ולהזמין
               </p>
-              <p className="homeP">
+              <p>
                 צוות הפקה מקצועי ומלצרים מנוסים המשרתים את הקהל באדיבות, מוסיפים
                 לחוויה הקולינרית חן אנושי והופכים את האירוע להפוך לחוויה בלתי
                 נשכחת
               </p>
-              <p className="homeP">
+              <p>
                 שף פנחס מתהדר בתפריט מגוון המוצע במחירים נוחים שיאפשרו לכם להנות
                 משירותי ההסעדה המעולים במסגרת תקציב משתלמת
               </p>
+
               <Link className="aboutLink" to="/About">
                 אודות שף פנחס
               </Link>
             </div>
           </div>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <div className="homeButtom">
             <h2
               data-aos="fade-down"
@@ -99,18 +112,14 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <Image className="homePic2" src={homeImage3}></Image>
         </Grid>
-        <Grid item xs={6}>
-          <div className="homePic2">
-            <Image src={homeImage3}></Image>
+
+        <Grid item xs={12} sm={6}>
+          <div>
+            <Image className="homePic3" src={homeImage4}></Image>
           </div>
-        </Grid>
-        <Grid item xs={6}>
-          <div className="homePic3">
-            <Image src={homeImage4}></Image>
-          </div>
-        </Grid>
-        <Grid item xs={6}>
+
           <div className="homeButtom1">
             <h2
               data-aos="fade-down"
@@ -135,3 +144,7 @@ export default function Home() {
     </div>
   );
 }
+Home.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(Home);
