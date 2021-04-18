@@ -33,6 +33,7 @@ body {
 .MenuBasicGrid {
   width: 100%;
   margin-left: 20px;
+  box-sizing: border-box;
 }
 
 .basicMenuDiv {
@@ -54,6 +55,7 @@ body {
   font-family: "Heebo", Sans-serif;
   color: #7f0909;
   text-align: center;
+  box-sizing: border-box;
 }
 .priceTable {
   position: relative;
@@ -64,6 +66,7 @@ body {
   margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid #7f0909;
+  box-sizing: border-box;
 }
 .ulTablePrice {
   position: relative;
@@ -72,15 +75,18 @@ body {
   color: #000000;
   list-style-type: none;
   line-height: 1;
+  box-sizing: border-box;
 }
 .spanSalat {
   direction: rtl;
   margin-right: 5px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 .basicPriceBottom {
   background-color: #ece8e8;
   position: relative;
+  box-sizing: border-box;
 }
 .priceTableBottomFooter {
   direction: rtl;
@@ -88,4 +94,24 @@ body {
   margin-top: 10px;
   padding: 3px 0px 12px 0px;
   text-align: center;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1290px) {
+  
+  .basicMenuDiv {
+    font-size: 18px;
+  }
+  .basicPrice{
+    font-size: 40px;
+  }
+  .spanSalat {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 805px) {
+  .MenuBasicGrid {
+    display: none;
+  }
 }

@@ -20,6 +20,7 @@ body {
   height: 700px;
   color: white;
   background-image: url("../images/backgroundhome.jpg");
+  box-sizing: border-box;
 }
 .homeTitleH1 > h1 {
   animation-duration: 2s;
@@ -84,12 +85,11 @@ body {
   margin-top: 80px;
 }
 
-.content-home{
+.content-home {
   margin-right: 20px;
 }
 
 .homeDetails {
-  
   font-size: 40px;
   font-weight: 200;
   line-height: 1.1em;
@@ -98,14 +98,11 @@ body {
   text-align: right;
   margin-top: 70px;
   margin-bottom: 30px;
-  
 }
-.homeP  {
-  
+.homeP {
   font-size: 17px;
   text-align: right;
   padding-bottom: 20px;
-  
 }
 .aboutLink {
   font-size: 19px;
@@ -131,24 +128,21 @@ body {
 }
 .homePic2 {
   width: 100%;
-  
-  
 }
 .homePic3 {
   width: 100%;
   margin-top: 50px;
-  
 }
 .homeButtom {
   width: 100%;
-  
+
   max-height: 350px;
   background-color: black;
   margin-top: 50px;
   padding: 50px 50px 50px 50px;
 }
 .homeButtom1 {
-  width:100%;
+  width: 100%;
   height: 350px;
   background-color: black;
 
@@ -186,50 +180,45 @@ body {
   margin-left: 60px;
   padding-left: 10px;
 }
-@media screen and (max-width:600px) {
-  .homeDetails{
+@media screen and (max-width: 600px) {
+  .homeDetails {
     font-size: 20px;
     margin-top: 10px;
     text-align: center;
-    
-    
   }
- .homeP{
-   text-align: center;
-   font-size: 13px;
-   padding-left: 20px;
-   padding-right: 20px;
- }
- .homePics{
-   display: none;
- }
- .aboutLink{
-   font-size: 14px;
-   margin-bottom: 10px;
- } 
- .homeButtomDiv{
-   font-size: 14px;
-   
- }
- .homeButtom1H2{
-   margin-top: 50px;
- }
+  .homeP {
+    text-align: center;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .homePics {
+    display: none;
+  }
+  .aboutLink {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .homeButtomDiv {
+    font-size: 14px;
+  }
+
+  .homeButtom1H2 {
+    margin-top: 50px;
+  }
+  
 }
-@media screen and (max-width:1200px){
-  .homeButtom{
+@media screen and (max-width: 1200px) {
+  .homeButtom {
     padding: 25px;
-    
   }
-  .homeButtom1{
+  .homeButtom1 {
     padding: 25px;
-    
   }
-  .homeButtomH2{
-    font-size:30px ;
+  .homeButtomH2 {
+    font-size: 30px;
   }
-  .homeButtom1H2{
-    font-size:30px ;
+  .homeButtom1H2 {
+    font-size: 30px;
   }
-  
-  
 }

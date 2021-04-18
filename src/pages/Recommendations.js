@@ -2,9 +2,20 @@ import React from "react";
 import { useState } from "react";
 import { Form, Col, Button, Carousel } from "react-bootstrap";
 import Grid from "@material-ui/core/Grid";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 import "../css/Recommendations.css";
 
-export default function Recommendations() {
+const styles = () => ({
+  root: {
+    flexGrow: 1,
+  }
+  
+});
+
+
+ function Recommendations(props) {
+  const { classes } = props;
   const [recommendation, setRecommendation] = useState({
     name: "",
     phone: "",
@@ -24,14 +35,14 @@ export default function Recommendations() {
   const isDisable = recommendation.name.length === 0 || recommendation.phone.length === 0 
   || recommendation.email.length === 0 || recommendation.Recommendation.length === 0;
   return (
-    <div>
-      <Grid container>
-        <Grid item xs={12}>
+    <div className={classes.root}>
+      <Grid container >
+        <Grid item xs={12} sm={12}>
           <div className="RecommendationsTitle">
             <h2>המלצות</h2>
           </div>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={12} >
           <div>
             <Carousel className="RecommendationsCarousel">
               <Carousel.Item>
@@ -180,3 +191,7 @@ export default function Recommendations() {
     </div>
   );
 }
+Recommendations.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(Recommendations);

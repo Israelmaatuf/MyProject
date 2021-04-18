@@ -16,9 +16,20 @@ import eventCarousel8 from "../images/Carousel/carouseleventpic8.jpeg";
 import eventCarousel9 from "../images/Carousel/carouseleventpic9.jpeg";
 import eventCarousel10 from "../images/Carousel/carouseleventpic10.jpeg";
 import eventCarousel11 from "../images/Carousel/carouseleventpic11.jpeg";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 import "../css/EventsCatering.css";
 
-export default function EventsCatering(props) {
+const styles = () => ({
+  root: {
+    flexGrow: 1,
+  }
+  
+});
+
+function EventsCatering(props) {
+  const { classes } = props;
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -38,14 +49,14 @@ export default function EventsCatering(props) {
   };
 
   return (
-    <div>
-      <Grid container>
-        <Grid item xs={6}>
-          <div className="eventspic1">
-            <Image src={eventpic1}></Image>
-          </div>
+    <div className={classes.root}>
+      <Grid container spacing={24}>
+      <Grid item xs={12} sm={6}>
+          
+            <Image className="eventspic1" src={eventpic1}></Image>
+          
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <div className="titleEvents">
             <h2 data-aos="fade-down" data-aos-duration="1000">קייטרינג אירועים</h2>
 
@@ -105,3 +116,7 @@ export default function EventsCatering(props) {
     </div>
   );
 }
+EventsCatering.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(EventsCatering);

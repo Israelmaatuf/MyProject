@@ -7,6 +7,7 @@
   font-family: sans-serif;
   margin-top: 50px;
   padding-right: 50px;  
+  box-sizing: border-box;
 }
 .eventsP{
   width: 100%;
@@ -19,6 +20,7 @@
   line-height: 1.0em;
   letter-spacing: 0.5px;
   padding-top: 8px;
+  box-sizing: border-box;
 }
 
 .buttonEvents{
@@ -43,9 +45,11 @@
   transition-property: transform;
 }
 .eventspic1{
+  width: 100%;
   margin-left: 20px;
   margin-top: 50px;
   padding-bottom: 4px;
+  box-sizing: border-box;
 }
 .CarouselImagesEvents{
   width: 100%;
@@ -56,4 +60,14 @@
   margin: auto;
   width: 100%;
   padding: 10px;
+}
+@media screen and (max-width:1254px) {
+  .titleEvents {
+    font-size:26px ;
+  }
+  .eventsP{
+    font-size:17px ;
+    width: auto;
+  }
+  
 }

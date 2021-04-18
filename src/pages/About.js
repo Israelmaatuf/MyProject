@@ -6,7 +6,7 @@ import { withStyles } from "@material-ui/core/styles";
 import AboutPic from "../images/aboutpic2.jpg";
 import "../css/About.css";
 
-const styles = (theme) => ({
+const styles = () => ({
   root: {
     flexGrow: 1,
   }

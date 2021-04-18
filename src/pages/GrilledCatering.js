@@ -16,9 +16,21 @@ import grilledCarousel8 from "../images/Carousel/carouselgrilledpic8.jpeg";
 import grilledCarousel9 from "../images/Carousel/carouselgrilledpic9.jpeg";
 import grilledCarousel10 from "../images/Carousel/carouselgrilledpic10.jpeg";
 import grilledCarousel11 from "../images/Carousel/carouselgrilledpic11.jpeg";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 import "../css/GrilledCatering.css";
 
-export default function GrilledCatering(props) {
+const styles = () => ({
+  root: {
+    flexGrow: 1,
+  }
+  
+});
+
+function GrilledCatering(props) {
+
+  const { classes } = props;
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -38,19 +50,19 @@ export default function GrilledCatering(props) {
   };
 
   return (
-    <div className="Grilled">
-      <Grid container>
-        <Grid item xs={6}>
-          <div className="grilledPic1">
-            <Image src={grilledpic1}></Image>
-          </div>
+    <div className={classes.root}>
+      <Grid container spacing={24}>
+      <Grid item xs={12} sm={6}>
+          
+            <Image className="grilledPic1" src={grilledpic1}></Image>
+          
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <div className="titleGrilled">
-            <div>
+            
               <h2 data-aos="fade-down" data-aos-duration="1000">בשרים על האש</h2>
-            </div>
-            {/* <br /> */}
+            
+            
             <div className="grilledP">
               <p>
                 תפריט בשרים איכותיים הנצלים על גריל במקום האירוע, מסופקים עם
@@ -110,3 +122,7 @@ export default function GrilledCatering(props) {
     </div>
   );
 }
+GrilledCatering.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(GrilledCatering);

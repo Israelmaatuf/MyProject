@@ -20,7 +20,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import "../css/CateringBasic.css";
 
-const styles = (theme) => ({
+const styles = () => ({
   root: {
     flexGrow: 1,
   }
@@ -50,11 +50,11 @@ function CateringBasic(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container>
+      <Grid container spacing={24}>
         <Grid item xs={12} sm={6}>
-          <div className="basicpic1">
-            <Image src={basicImage1}></Image>
-          </div>
+          
+            <Image className="basicpic1" src={basicImage1}></Image>
+          
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className="titleBasic">

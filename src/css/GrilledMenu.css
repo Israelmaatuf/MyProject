@@ -109,3 +109,46 @@ body {
   padding: 3px 0px 12px 0px;
   text-align: center;
 }
+@media screen and (max-width: 1290px) {
+  .grilledSpanPrice {
+    font-size: 16px;
+    position: relative;
+    right: 50px;
+    bottom: 45px;
+  }
+  .grilledMenuDiv {
+    font-size: 18px;
+  }
+  .grilledPrice {
+    font-size: 40px;
+  }
+  .spanGrilledDetails {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .grilledSpanPrice {
+    position: relative;
+    right: 30px;
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grilledSpanPrice {
+    position: relative;
+    right: 20px;
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 964px) {
+  .grilledSpanPrice {
+    position: relative;
+    right: 5px;
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 805px) {
+  .MenuGrilledGrid {
+    display: none;
+  }
+}
