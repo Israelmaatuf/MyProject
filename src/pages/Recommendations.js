@@ -47,7 +47,7 @@ const styles = () => ({
             <Carousel className="RecommendationsCarousel">
               <Carousel.Item>
                 <h3 className="d-block w-100">לקוחות ממליצים</h3>
-                <br />
+                
                 <br />
                 <div className="textCarousel">
                   {" "}

@@ -6,9 +6,18 @@ import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaInstagramSquare, FaPhone, FaWhatsapp } from "react-icons/fa";
 import Grid from "@material-ui/core/Grid";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
 import "../css/Contact.css";
 
-export default function Contact() {
+const styles = () => ({
+  root: {
+    flexGrow: 1,
+  },
+});
+
+function Contact(props) {
+  const { classes } = props;
   const [contact, setContact] = useState({
     name: "",
     phone: "",
@@ -31,19 +40,18 @@ export default function Contact() {
     contact.email.length === 0 ||
     contact.massage.length === 0;
   return (
-    <div>
-      <Grid container>
+    <div className={classes.root}>
+      <Grid container spacing={24}>
         <Grid item xs={12}>
           <div className="contactTitle">
             <h2>צרו קשר</h2>
           </div>
         </Grid>
-        <Grid item xs={6}>
-          <div>
-            <Image className="contactImage" src={ContactImage}></Image>
-          </div>
+        <Grid item xs={12} sm={6}>
+          <Image className="contactImage" src={ContactImage}></Image>
         </Grid>
-        <Grid item xs={6}>
+
+        <Grid item xs={12} sm={6}>
           <div className="ContactForm">
             <Form>
               <Form.Row>
@@ -153,3 +161,7 @@ export default function Contact() {
     </div>
   );
 }
+Contact.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+export default withStyles(styles)(Contact);
