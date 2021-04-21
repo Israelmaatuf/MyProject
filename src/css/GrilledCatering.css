@@ -14,8 +14,8 @@
   font-size: 19px;
   text-align: right;
   color: black;
-  margin-bottom: 14px;
-  margin-top: 20px;
+  margin-bottom: 24px;
+  margin-top: 40px;
   font-weight: 400;
   line-height: 1em;
   letter-spacing: 0.5px;
@@ -44,7 +44,7 @@
   transition-property: transform;
 }
 .grilledPic1 {
-  width: 100%;
+  width: 90%;
   height: 378px;
   margin-left: 20px;
   margin-top: 50px;
@@ -53,6 +53,7 @@
 .CarouselImagesGrilled {
   width: 100%;
   margin-top: 50px;
+  padding: 20px;
 }
 .imgGrilled {
   margin: auto;

@@ -17,13 +17,11 @@ function About(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <div dir="rtl" className={classes.root}>
       
     <div className="headerAbout">
     <Grid container>
-    <Grid item xs={12} sm={6}>
-    <Image className="aboutPic" src={AboutPic}></Image>
-    </Grid>
+    
     <Grid item xs={12} sm={6}>
       <div className="titleAbout">
       
@@ -54,6 +52,9 @@ function About(props) {
         <br/>
       </div>
       </Grid>
+      <Grid item xs={12} sm={6}>
+    <Image className="aboutPic" src={AboutPic}></Image>
+    </Grid>
       </Grid>  
     </div>
     

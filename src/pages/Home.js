@@ -14,7 +14,7 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-const styles = (theme) => ({
+const styles = () => ({
   root: {
     flexGrow: 1,
   }
@@ -25,7 +25,7 @@ function Home(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <Grid container spacing={24}>
+      <Grid container >
         <Grid item xs={12}>
           <div className="homeTitle">
             <div className="homeTitleH1">

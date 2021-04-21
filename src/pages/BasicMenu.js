@@ -1,5 +1,4 @@
 import React from "react";
-
 import ProductCheckbox from "../components/ProductCheckbox";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -16,7 +15,7 @@ export default function BasicMenu({
 }) {
   return (
     <div>
-      <Grid container>
+      <Grid container  >
         <Grid item xs={3}>
           <Paper className="MenuBasicGrid">
             <div className="basicMenuDiv">

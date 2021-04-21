@@ -40,18 +40,12 @@ function Contact(props) {
     contact.email.length === 0 ||
     contact.massage.length === 0;
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12}>
+    <div dir="rtl" className={classes.root}>
+      <Grid container >
+        <Grid item xs={12} sm={6}>
           <div className="contactTitle">
             <h2>צרו קשר</h2>
           </div>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Image className="contactImage" src={ContactImage}></Image>
-        </Grid>
-
-        <Grid item xs={12} sm={6}>
           <div className="ContactForm">
             <Form>
               <Form.Row>
@@ -156,6 +150,9 @@ function Contact(props) {
             <h4>להזמנות: 053-7302276</h4>
             <h4>כתובת: צמח צדק 10/1, לוד</h4>
           </div>
+        </Grid>
+        <Grid item xs={12} md={6} sm={6}>
+          <Image className="contactImage" src={ContactImage}></Image>
         </Grid>
       </Grid>
     </div>

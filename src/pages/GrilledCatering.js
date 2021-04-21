@@ -23,12 +23,10 @@ import "../css/GrilledCatering.css";
 const styles = () => ({
   root: {
     flexGrow: 1,
-  }
-  
+  },
 });
 
 function GrilledCatering(props) {
-
   const { classes } = props;
 
   const responsive = {
@@ -50,19 +48,14 @@ function GrilledCatering(props) {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-      <Grid item xs={12} sm={6}>
-          
-            <Image className="grilledPic1" src={grilledpic1}></Image>
-          
-        </Grid>
+    <div dir="rtl" className={classes.root}>
+      <Grid container >
         <Grid item xs={12} sm={6}>
           <div className="titleGrilled">
-            
-              <h2 data-aos="fade-down" data-aos-duration="1000">בשרים על האש</h2>
-            
-            
+            <h2 data-aos="fade-down" data-aos-duration="1000">
+              בשרים על האש
+            </h2>
+
             <div className="grilledP">
               <p>
                 תפריט בשרים איכותיים הנצלים על גריל במקום האירוע, מסופקים עם
@@ -80,15 +73,18 @@ function GrilledCatering(props) {
               </p>
               <p>לכם להתפנק בבשרים איכותיים ועסיסיים</p>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" >
+            <div data-aos="fade-up" data-aos-duration="1000">
               <Link to="/GrilledMenu" className="buttonGrilled">
                 לתפריט והזמנה
               </Link>
             </div>
           </div>
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <Image className="grilledPic1" src={grilledpic1}></Image>
+        </Grid>
         <Grid item xs={12}>
-          <div className="CarouselImagesGrilled">
+          <div dir="ltr" className="CarouselImagesGrilled">
             <Carousel
               swipeable={false}
               centerMode={true}
@@ -115,7 +111,6 @@ function GrilledCatering(props) {
               <Image className="imgGrilled" src={grilledCarousel10}></Image>
               <Image className="imgGrilled" src={grilledCarousel11}></Image>
             </Carousel>
-            ;
           </div>
         </Grid>
       </Grid>

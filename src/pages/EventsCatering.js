@@ -23,8 +23,7 @@ import "../css/EventsCatering.css";
 const styles = () => ({
   root: {
     flexGrow: 1,
-  }
-  
+  },
 });
 
 function EventsCatering(props) {
@@ -49,16 +48,13 @@ function EventsCatering(props) {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-      <Grid item xs={12} sm={6}>
-          
-            <Image className="eventspic1" src={eventpic1}></Image>
-          
-        </Grid>
+    <div dir="rtl" className={classes.root}>
+      <Grid container >
         <Grid item xs={12} sm={6}>
           <div className="titleEvents">
-            <h2 data-aos="fade-down" data-aos-duration="1000">קייטרינג אירועים</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
+              קייטרינג אירועים
+            </h2>
 
             <div className="eventsP">
               <p>
@@ -81,8 +77,11 @@ function EventsCatering(props) {
             </div>
           </div>
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <Image className="eventspic1" src={eventpic1}></Image>
+        </Grid>
         <Grid item xs={12}>
-          <div className="CarouselImagesEvents">
+          <div dir="ltr" className="CarouselImagesEvents">
             <Carousel
               swipeable={false}
               centerMode={true}
@@ -109,7 +108,6 @@ function EventsCatering(props) {
               <Image className="imgEvents" src={eventCarousel10}></Image>
               <Image className="imgEvents" src={eventCarousel11}></Image>
             </Carousel>
-            ;
           </div>
         </Grid>
       </Grid>

@@ -23,8 +23,7 @@ import "../css/CateringBasic.css";
 const styles = () => ({
   root: {
     flexGrow: 1,
-  }
-  
+  },
 });
 
 function CateringBasic(props) {
@@ -49,13 +48,9 @@ function CateringBasic(props) {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12} sm={6}>
-          
-            <Image className="basicpic1" src={basicImage1}></Image>
-          
-        </Grid>
+    <div dir="rtl" className={classes.root}>
+      <Grid container >
+        
         <Grid item xs={12} sm={6}>
           <div className="titleBasic">
             <h2 data-aos="fade-down" data-aos-duration="1000">
@@ -78,15 +73,17 @@ function CateringBasic(props) {
             </div>
           </div>
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <Image className="basicpic1" src={basicImage1}></Image>
+        </Grid>
         <Grid item xs={12}>
-          <div className="CarouselImagesBasic">
+          <div dir="ltr" className="CarouselImagesBasic">
             <Carousel
               swipeable={false}
               centerMode={true}
               showDots={true}
               responsive={responsive}
               autoPlay={props.deviceType !== "mobile" ? true : false}
-              // autoPlay={true}
               autoPlaySpeed={3000}
               transitionDuration={500}
               containerClass="carousel-container"
@@ -107,7 +104,7 @@ function CateringBasic(props) {
               <Image className="imgBasic" src={basicCarousel10}></Image>
               <Image className="imgBasic" src={basicCarousel11}></Image>
             </Carousel>
-            ;
+            
           </div>
         </Grid>
       </Grid>

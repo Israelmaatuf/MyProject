@@ -38,6 +38,7 @@
 .contactImage {
   width: 90%;
   height: 450px;
+  margin-top: 100px;
   margin-left: 20px;
 }
 .iconsContact {
@@ -82,22 +83,20 @@
   .iconsContact{
     font-size: 18px;
   }
+  .contactImage{
+    width: 95%;
+  }
+  .ContactForm{
+    width: 90%;
+  }
 }
 @media screen and (max-width: 748px) {
   .ButtonSendAMassage {
     width: 32%;
     font-size: 14px;
   }
-  .contactImage{
-    display: none;
-  }
-  .ContactForm{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
   
-  .contactImage{
-    display: block;
+  .ContactForm{
+    width: 90%;
   }
 }
