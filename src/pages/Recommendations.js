@@ -9,12 +9,10 @@ import "../css/Recommendations.css";
 const styles = () => ({
   root: {
     flexGrow: 1,
-  }
-  
+  },
 });
 
-
- function Recommendations(props) {
+function Recommendations(props) {
   const { classes } = props;
   const [recommendation, setRecommendation] = useState({
     name: "",
@@ -32,22 +30,25 @@ const styles = () => ({
     evt.preventDefault();
     console.log(recommendation);
   }
-  const isDisable = recommendation.name.length === 0 || recommendation.phone.length === 0 
-  || recommendation.email.length === 0 || recommendation.Recommendation.length === 0;
+  const isDisable =
+    recommendation.name.length === 0 ||
+    recommendation.phone.length === 0 ||
+    recommendation.email.length === 0 ||
+    recommendation.Recommendation.length === 0;
   return (
     <div className={classes.root}>
-      <Grid container >
+      <Grid container>
         <Grid item xs={12} sm={12}>
           <div className="RecommendationsTitle">
             <h2>המלצות</h2>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} >
+        <Grid item xs={12} sm={12}>
           <div>
             <Carousel className="RecommendationsCarousel">
               <Carousel.Item>
                 <h3 className="d-block w-100">לקוחות ממליצים</h3>
-                
+
                 <br />
                 <div className="textCarousel">
                   {" "}

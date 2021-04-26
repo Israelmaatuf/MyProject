@@ -41,7 +41,7 @@ function Contact(props) {
     contact.massage.length === 0;
   return (
     <div dir="rtl" className={classes.root}>
-      <Grid container >
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="contactTitle">
             <h2>צרו קשר</h2>

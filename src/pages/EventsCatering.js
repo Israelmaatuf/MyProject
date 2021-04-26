@@ -49,7 +49,7 @@ function EventsCatering(props) {
 
   return (
     <div dir="rtl" className={classes.root}>
-      <Grid container >
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="titleEvents">
             <h2 data-aos="fade-down" data-aos-duration="1000">

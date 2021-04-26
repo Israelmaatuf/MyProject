@@ -4,7 +4,6 @@
   direction: rtl;
   margin-right: 15px;
   box-sizing: border-box;
-  
 }
 .productTitle {
   text-align: right;
@@ -32,32 +31,29 @@
   border: 1px solid #7f0909;
   width: 100%;
 }
-@media screen and (max-width:1200px){
-  .buttonSendOrder{
+@media screen and (max-width: 1200px) {
+  .buttonSendOrder {
     margin-right: 300px;
   }
 }
-@media screen and (max-width:720px){
-  .buttonSendOrder{
+@media screen and (max-width: 720px) {
+  .buttonSendOrder {
     margin-right: 150px;
   }
 }
-@media screen and (max-width:600px) {
-  .orderFormMenu{
+@media screen and (max-width: 600px) {
+  .orderFormMenu {
     width: 100%;
-    
   }
-  .FormStyle{
+  .FormStyle {
     font-size: 14px;
     margin-right: 50px;
   }
-  .CommentsToOrderMenu{
+  .CommentsToOrderMenu {
     font-size: 14px;
     margin-right: 50px;
   }
-  .buttonSendOrder{
+  .buttonSendOrder {
     font-size: 14px;
-    
   }
-  
 }

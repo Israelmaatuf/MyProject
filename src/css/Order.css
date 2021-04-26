@@ -21,37 +21,36 @@
   border-radius: 8px;
 }
 
-@media screen and (max-width:1200px) {
-  .imgLinks{
+@media screen and (max-width: 1200px) {
+  .imgLinks {
     width: 80%;
     height: 290px;
     margin-left: 50px;
     margin-right: 10px;
   }
-  
 }
-@media screen and (max-width:980px) {
-.imgLinks{
-  width: 84%;
-  height: 250px;
-  margin-left: 30px;
+@media screen and (max-width: 980px) {
+  .imgLinks {
+    width: 84%;
+    height: 250px;
+    margin-left: 30px;
+  }
 }
-}
-@media screen and (max-width:748px) {
-  .imgLinks{
+@media screen and (max-width: 748px) {
+  .imgLinks {
     width: 90%;
     height: 220px;
     margin-left: 15px;
   }
 }
-@media screen and (max-width:600px) {
-.imgLinks{
-  width: 95%;
-  height: 360px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.OrderTitle{
- margin-bottom: 60px; 
-}
+@media screen and (max-width: 600px) {
+  .imgLinks {
+    width: 95%;
+    height: 360px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .OrderTitle {
+    margin-bottom: 60px;
+  }
 }

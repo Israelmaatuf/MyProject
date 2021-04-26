@@ -4,7 +4,7 @@
   text-align: right;
   margin-top: 120px;
   margin-bottom: 20px;
-  
+
   font-size: 40px;
   font-family: "Heebo", Sans-serif;
   font-weight: 400;
@@ -71,22 +71,22 @@
   .ButtonSendAMassage {
     width: 30%;
   }
-  .contactDetails h4{
+  .contactDetails h4 {
     font-size: 20px;
   }
-  .FormStyleContact{
+  .FormStyleContact {
     font-size: 14px;
   }
-  .WriteAMassage{
+  .WriteAMassage {
     font-size: 14px;
   }
-  .iconsContact{
+  .iconsContact {
     font-size: 18px;
   }
-  .contactImage{
+  .contactImage {
     width: 95%;
   }
-  .ContactForm{
+  .ContactForm {
     width: 90%;
   }
 }
@@ -95,8 +95,8 @@
     width: 32%;
     font-size: 14px;
   }
-  
-  .ContactForm{
+
+  .ContactForm {
     width: 90%;
   }
 }

@@ -7,10 +7,10 @@ import Footer from "../components/Footer.js";
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Top />
-      <Footer />
-    </div>
+      <div className="App">
+        <Top />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

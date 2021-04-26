@@ -15,7 +15,7 @@ export default function BasicMenu({
 }) {
   return (
     <div>
-      <Grid container  >
+      <Grid container>
         <Grid item xs={3}>
           <Paper className="MenuBasicGrid">
             <div className="basicMenuDiv">

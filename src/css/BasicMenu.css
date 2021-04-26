@@ -97,18 +97,16 @@ body {
   box-sizing: border-box;
 }
 @media screen and (max-width: 1290px) {
-  
   .basicMenuDiv {
     font-size: 18px;
   }
-  .basicPrice{
+  .basicPrice {
     font-size: 40px;
   }
   .spanSalat {
     font-size: 14px;
   }
 }
-
 
 @media screen and (max-width: 805px) {
   .MenuBasicGrid {

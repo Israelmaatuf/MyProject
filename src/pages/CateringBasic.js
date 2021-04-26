@@ -49,8 +49,7 @@ function CateringBasic(props) {
 
   return (
     <div dir="rtl" className={classes.root}>
-      <Grid container >
-        
+      <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="titleBasic">
             <h2 data-aos="fade-down" data-aos-duration="1000">
@@ -104,7 +103,6 @@ function CateringBasic(props) {
               <Image className="imgBasic" src={basicCarousel10}></Image>
               <Image className="imgBasic" src={basicCarousel11}></Image>
             </Carousel>
-            
           </div>
         </Grid>
       </Grid>

@@ -10,7 +10,7 @@ import EventMenu from "../pages/EventMenu";
 import GrilledMenu from "../pages/GrilledMenu";
 import Order from "../pages/Order";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Dropdown , Image } from "react-bootstrap";
+import { Dropdown, Image } from "react-bootstrap";
 import Logo from "../images/LogoChefPinchas.png";
 import { BsJustify } from "react-icons/bs";
 import React from "react";
@@ -18,17 +18,19 @@ import React from "react";
 import "../css/Top.css";
 
 const Top = () => {
-  
-        const MenueBtn = () =>{     document.querySelector('.menu-btn').addEventListener
-          ('click' , () => document.querySelector('.main-menu')
-          .classList.toggle('show'));
-        }
-        
+  const MenueBtn = () => {
+    document
+      .querySelector(".menu-btn")
+      .addEventListener("click", () =>
+        document.querySelector(".main-menu").classList.toggle("show")
+      );
+  };
+
   return (
     <Router>
       <div className="Top">
         <div className="menu-btn">
-        <BsJustify onClick={MenueBtn}></BsJustify>
+          <BsJustify onClick={MenueBtn}></BsJustify>
         </div>
         <div className="container">
           {/* nav */}
@@ -47,29 +49,42 @@ const Top = () => {
                   אודות
                 </Link>
               </li>
-              <Dropdown  alignRight >
-              <Dropdown.Toggle variant="warning" className="DropDownCatering">קייטרינג</Dropdown.Toggle>
+              <Dropdown alignRight>
+                <Dropdown.Toggle variant="warning" className="DropDownCatering">
+                  קייטרינג
+                </Dropdown.Toggle>
 
-              <Dropdown.Menu >
-                <Dropdown.Item className="menuDrop" href="/CateringBasic">
-                  קייטרינג בייסיק
-                </Dropdown.Item>
-                <Dropdown.Item className="menuDrop" href="/EventsCatering">
-                  קייטרינג אירועים
-                </Dropdown.Item>
-                <Dropdown.Item className="menuDrop" href="/Grilled">בשרים על האש</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+                <Dropdown.Menu>
+                  <Dropdown.Item className="menuDrop" href="/CateringBasic">
+                    קייטרינג בייסיק
+                  </Dropdown.Item>
+                  <Dropdown.Item className="menuDrop" href="/EventsCatering">
+                    קייטרינג אירועים
+                  </Dropdown.Item>
+                  <Dropdown.Item className="menuDrop" href="/Grilled">
+                    בשרים על האש
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
 
-            <Dropdown alignRight>
-              <Dropdown.Toggle variant="warning" className="DropDownMenu" >תפריט והזמנה</Dropdown.Toggle>
+              <Dropdown alignRight>
+                <Dropdown.Toggle variant="warning" className="DropDownMenu">
+                  תפריט והזמנה
+                </Dropdown.Toggle>
 
-              <Dropdown.Menu>
-                <Dropdown.Item className="menuDrop" href="/BasicMenu">תפריט בייסיק</Dropdown.Item>
-                <Dropdown.Item className="menuDrop" href="/EventMenu">תפריט אירועים</Dropdown.Item>
-                <Dropdown.Item className="menuDrop" href="/GrilledMenu"> על האש</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+                <Dropdown.Menu>
+                  <Dropdown.Item className="menuDrop" href="/BasicMenu">
+                    תפריט בייסיק
+                  </Dropdown.Item>
+                  <Dropdown.Item className="menuDrop" href="/EventMenu">
+                    תפריט אירועים
+                  </Dropdown.Item>
+                  <Dropdown.Item className="menuDrop" href="/GrilledMenu">
+                    {" "}
+                    על האש
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               <li>
                 <Link to="/Recommendations" className="navigationLink">
                   המלצות
@@ -83,7 +98,6 @@ const Top = () => {
             </ul>
           </nav>
         </div>
-        
       </div>
 
       <Switch>

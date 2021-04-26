@@ -29,8 +29,8 @@ function Order(props) {
             <h2>תפריט והזמנה</h2>
           </div>
         </Grid>
-        
-        <Grid 
+
+        <Grid
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
@@ -66,8 +66,6 @@ function Order(props) {
             <Image className="imgLinks" src={OrderPic3}></Image>
           </Link>
         </Grid>
-        
-        
       </Grid>
     </div>
   );
