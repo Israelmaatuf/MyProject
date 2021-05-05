@@ -1,28 +1,16 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
-import OrderPic1 from "../images/cateringpic1.jpg";
-import OrderPic2 from "../images/eventpic1.jpg";
-import OrderPic3 from "../images/grilledpic3.jpg";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/Order.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
-function Order(props) {
-  const { classes } = props;
+function Order() {
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="Order">
       <Grid container spacing={24}>
         <Grid item xs={12}>
           <div className="OrderTitle">
@@ -39,7 +27,7 @@ function Order(props) {
           xs={12}
         >
           <Link to="./BasicMenu">
-            <Image className="imgLinks" src={OrderPic1}></Image>
+            <img className="imgLinks" src="images/cateringpic1.jpg"></img>
           </Link>
         </Grid>
         <Grid
@@ -51,7 +39,7 @@ function Order(props) {
           xs={12}
         >
           <Link to="./EventMenu">
-            <Image className="imgLinks" src={OrderPic2}></Image>
+            <img className="imgLinks" src="images/eventpic1.jpg"></img>
           </Link>
         </Grid>
         <Grid
@@ -63,14 +51,12 @@ function Order(props) {
           xs={12}
         >
           <Link to="./GrilledMenu">
-            <Image className="imgLinks" src={OrderPic3}></Image>
+            <img className="imgLinks" src="images/grilledpic3.jpg"></img>
           </Link>
         </Grid>
       </Grid>
     </div>
   );
 }
-Order.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(Order);
+
+export default Order;

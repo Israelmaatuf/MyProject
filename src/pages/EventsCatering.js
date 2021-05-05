@@ -1,34 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import eventpic1 from "../images/EventImg1.jpeg";
-import eventCarousel1 from "../images/Carousel/carouseleventpic1.jpeg";
-import eventCarousel2 from "../images/Carousel/carouseleventpic2.jpeg";
-import eventCarousel3 from "../images/Carousel/carouseleventpic3.jpeg";
-import eventCarousel4 from "../images/Carousel/carouseleventpic4.jpeg";
-import eventCarousel5 from "../images/Carousel/carouseleventpic5.jpeg";
-import eventCarousel6 from "../images/Carousel/carouseleventpic6.jpeg";
-import eventCarousel7 from "../images/Carousel/carouseleventpic7.jpeg";
-import eventCarousel8 from "../images/Carousel/carouseleventpic8.jpeg";
-import eventCarousel9 from "../images/Carousel/carouseleventpic9.jpeg";
-import eventCarousel10 from "../images/Carousel/carouseleventpic10.jpeg";
-import eventCarousel11 from "../images/Carousel/carouseleventpic11.jpeg";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/EventsCatering.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
 function EventsCatering(props) {
-  const { classes } = props;
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -48,7 +26,7 @@ function EventsCatering(props) {
   };
 
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="EventsCatering">
       <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="titleEvents">
@@ -78,7 +56,7 @@ function EventsCatering(props) {
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Image className="eventspic1" src={eventpic1}></Image>
+          <img className="eventspic1" src="images/EventImg1.jpeg"></img>
         </Grid>
         <Grid item xs={12}>
           <div dir="ltr" className="CarouselImagesEvents">
@@ -94,19 +72,51 @@ function EventsCatering(props) {
               removeArrowOnDeviceType={["tablet", "mobile"]}
               deviceType={props.deviceType}
               dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-10-px"
             >
-              <Image className="imgEvents" src={eventCarousel1}></Image>
-              <Image className="imgEvents" src={eventCarousel2}></Image>
-              <Image className="imgEvents" src={eventCarousel3}></Image>
-              <Image className="imgEvents" src={eventCarousel4}></Image>
-              <Image className="imgEvents" src={eventCarousel5}></Image>
-              <Image className="imgEvents" src={eventCarousel6}></Image>
-              <Image className="imgEvents" src={eventCarousel7}></Image>
-              <Image className="imgEvents" src={eventCarousel8}></Image>
-              <Image className="imgEvents" src={eventCarousel9}></Image>
-              <Image className="imgEvents" src={eventCarousel10}></Image>
-              <Image className="imgEvents" src={eventCarousel11}></Image>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic1.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic2.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic3.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic4.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic5.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic6.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic7.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic8.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic9.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic10.jpeg"
+              ></img>
+              <img
+                className="imgEvents"
+                src="images/Carousel/carouseleventpic11.jpeg"
+              ></img>
             </Carousel>
           </div>
         </Grid>
@@ -114,7 +124,5 @@ function EventsCatering(props) {
     </div>
   );
 }
-EventsCatering.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(EventsCatering);
+
+export default EventsCatering;

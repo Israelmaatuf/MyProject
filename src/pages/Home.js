@@ -1,29 +1,16 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
-import homeImage1 from "../images/homepic1.jpg";
-import homeImage2 from "../images/homepic2.jpg";
-import homeImage3 from "../images/homepic3.jpeg";
-import homeImage4 from "../images/homepic4.jpeg";
 import "../css/Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
-function Home(props) {
-  const { classes } = props;
+function Home() {
   return (
-    <div className={classes.root}>
+    <div className="Home">
       <Grid container>
         <Grid item xs={12}>
           <div className="homeTitle">
@@ -42,20 +29,20 @@ function Home(props) {
 
         <Grid item xs={12} sm={6}>
           <div>
-            <Image
+            <img
               data-aos="flip-left"
               data-aos-duration="1000"
-              src={homeImage1}
+              src="images/homepic1.jpg"
               className="homePics"
-            ></Image>
+            ></img>
             <br />
             <br />
-            <Image
+            <img
               data-aos="flip-right"
               data-aos-duration="1000"
-              src={homeImage2}
+              src="images/homepic1.jpg"
               className="homePics"
-            ></Image>
+            ></img>
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -111,12 +98,12 @@ function Home(props) {
               </p>
             </div>
           </div>
-          <Image className="homePic2" src={homeImage3}></Image>
+          <img className="homePic2" src="images/homepic3.jpeg"></img>
         </Grid>
 
         <Grid item xs={12} sm={6}>
           <div>
-            <Image className="homePic3" src={homeImage4}></Image>
+            <img className="homePic3" src="images/homepic4.jpeg"></img>
           </div>
 
           <div className="homeButtom1">
@@ -143,7 +130,5 @@ function Home(props) {
     </div>
   );
 }
-Home.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(Home);
+
+export default Home;

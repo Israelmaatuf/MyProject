@@ -1,3 +1,6 @@
+.Contact{
+  flex-grow: 1;
+}
 .contactTitle {
   color: #7f0909;
   direction: rtl;

@@ -1,3 +1,6 @@
+.CateringBasic{
+  flex-grow: 1;
+}
 .titleBasic {
   width: 100%;
   color: brown;

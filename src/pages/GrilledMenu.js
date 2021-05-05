@@ -1,5 +1,4 @@
 import React from "react";
-
 import ProductCheckboxGrilled from "../components/ProductCheckboxGrilled";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";

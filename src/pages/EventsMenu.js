@@ -1,11 +1,10 @@
 import React from "react";
-
 import ProductCheckbox from "../components/ProductCheckbox";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import "../css/EventMenu.css";
 
-export default function EventMenu({
+export default function EventsMenu({
   saladsProducts,
   VegetarianProducts,
   FirstMenuFishMeet,

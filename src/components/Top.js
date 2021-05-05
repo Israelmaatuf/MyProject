@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Home from "../pages/Home";
 import About from "../pages/About";
 import GrilledCatering from "../pages/GrilledCatering";
@@ -6,12 +7,11 @@ import EventsCatering from "../pages/EventsCatering";
 import Contact from "../pages/Contact";
 import Recommendations from "../pages/Recommendations";
 import BasicMenu from "../pages/BasicMenu";
-import EventMenu from "../pages/EventMenu";
+import EventsMenu from "../pages/EventsMenu";
 import GrilledMenu from "../pages/GrilledMenu";
 import Order from "../pages/Order";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Dropdown, Image } from "react-bootstrap";
-import Logo from "../images/LogoChefPinchas.png";
+import { Dropdown } from "react-bootstrap";
 import { BsJustify } from "react-icons/bs";
 import React from "react";
 
@@ -36,7 +36,7 @@ const Top = () => {
           {/* nav */}
           <nav className="main-nav">
             <Link to="/">
-              <Image className="logo" src={Logo}></Image>
+              <img className="logo" src="images/LogoChefPinchas.png"></img>
             </Link>
             <ul dir="rtl" className="main-menu">
               <li>
@@ -127,7 +127,7 @@ const Top = () => {
           <BasicMenu />
         </Route>
         <Route exact path="/EventMenu">
-          <EventMenu />
+          <EventsMenu />
         </Route>
         <Route exact path="/GrilledMenu">
           <GrilledMenu />

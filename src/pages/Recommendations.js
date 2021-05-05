@@ -2,18 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { Form, Col, Button, Carousel } from "react-bootstrap";
 import Grid from "@material-ui/core/Grid";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/Recommendations.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
-function Recommendations(props) {
-  const { classes } = props;
+function Recommendations() {
   const [recommendation, setRecommendation] = useState({
     name: "",
     phone: "",
@@ -36,7 +27,7 @@ function Recommendations(props) {
     recommendation.email.length === 0 ||
     recommendation.Recommendation.length === 0;
   return (
-    <div className={classes.root}>
+    <div className="Recommendations">
       <Grid container>
         <Grid item xs={12} sm={12}>
           <div className="RecommendationsTitle">
@@ -192,7 +183,5 @@ function Recommendations(props) {
     </div>
   );
 }
-Recommendations.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(Recommendations);
+
+export default Recommendations;

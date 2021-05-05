@@ -1,23 +1,13 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Form, Col, Button } from "react-bootstrap";
-import { Image } from "react-bootstrap";
-import ContactImage from "../images/contactImage.jpg";
 import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaInstagramSquare, FaPhone, FaWhatsapp } from "react-icons/fa";
 import Grid from "@material-ui/core/Grid";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/Contact.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
-function Contact(props) {
-  const { classes } = props;
+function Contact() {
   const [contact, setContact] = useState({
     name: "",
     phone: "",
@@ -40,7 +30,7 @@ function Contact(props) {
     contact.email.length === 0 ||
     contact.massage.length === 0;
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="Contact">
       <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="contactTitle">
@@ -152,13 +142,11 @@ function Contact(props) {
           </div>
         </Grid>
         <Grid item xs={12} md={6} sm={6}>
-          <Image className="contactImage" src={ContactImage}></Image>
+          <img className="contactImage" src="images/contactImage.jpg"></img>
         </Grid>
       </Grid>
     </div>
   );
 }
-Contact.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(Contact);
+
+export default Contact;

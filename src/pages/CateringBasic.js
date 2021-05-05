@@ -1,34 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import basicImage1 from "../images/BasicImg1.jpeg";
-import basicCarousel1 from "../images/Carousel/carouselpic1.jpeg";
-import basicCarousel2 from "../images/Carousel/carouselpic2.jpeg";
-import basicCarousel3 from "../images/Carousel/carouselpic3.jpeg";
-import basicCarousel4 from "../images/Carousel/carouselpic4.jpeg";
-import basicCarousel5 from "../images/Carousel/carouselpic5.jpeg";
-import basicCarousel6 from "../images/Carousel/carouselpic6.jpeg";
-import basicCarousel7 from "../images/Carousel/carouselpic7.jpeg";
-import basicCarousel8 from "../images/Carousel/carouselpic8.jpeg";
-import basicCarousel9 from "../images/Carousel/carouselpic9.jpeg";
-import basicCarousel10 from "../images/Carousel/carouselpic10.jpeg";
-import basicCarousel11 from "../images/Carousel/carouselpic11.jpeg";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/CateringBasic.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
 function CateringBasic(props) {
-  const { classes } = props;
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -48,7 +26,7 @@ function CateringBasic(props) {
   };
 
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="CateringBasic">
       <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="titleBasic">
@@ -73,7 +51,7 @@ function CateringBasic(props) {
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Image className="basicpic1" src={basicImage1}></Image>
+          <img className="basicpic1" src="images/BasicImg1.jpeg"></img>
         </Grid>
         <Grid item xs={12}>
           <div dir="ltr" className="CarouselImagesBasic">
@@ -89,19 +67,51 @@ function CateringBasic(props) {
               removeArrowOnDeviceType={["tablet", "mobile"]}
               deviceType={props.deviceType}
               dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-10-px"
             >
-              <Image className="imgBasic" src={basicCarousel1}></Image>
-              <Image className="imgBasic" src={basicCarousel2}></Image>
-              <Image className="imgBasic" src={basicCarousel3}></Image>
-              <Image className="imgBasic" src={basicCarousel4}></Image>
-              <Image className="imgBasic" src={basicCarousel5}></Image>
-              <Image className="imgBasic" src={basicCarousel6}></Image>
-              <Image className="imgBasic" src={basicCarousel7}></Image>
-              <Image className="imgBasic" src={basicCarousel8}></Image>
-              <Image className="imgBasic" src={basicCarousel9}></Image>
-              <Image className="imgBasic" src={basicCarousel10}></Image>
-              <Image className="imgBasic" src={basicCarousel11}></Image>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic1.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic2.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic3.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic4.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic5.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic6.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic7.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic8.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic9.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic10.jpeg"
+              ></img>
+              <img
+                className="imgBasic"
+                src="images/Carousel/carouselpic11.jpeg"
+              ></img>
             </Carousel>
           </div>
         </Grid>
@@ -109,7 +119,5 @@ function CateringBasic(props) {
     </div>
   );
 }
-CateringBasic.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(CateringBasic);
+
+export default CateringBasic;

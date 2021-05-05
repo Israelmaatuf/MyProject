@@ -1,22 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Image } from "react-bootstrap";
 import Grid from "@material-ui/core/Grid";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import AboutPic from "../images/aboutpic2.jpg";
 import "../css/About.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
-function About(props) {
-  const { classes } = props;
-
+function About() {
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="About">
       <div className="headerAbout">
         <Grid container>
           <Grid item xs={12} sm={6}>
@@ -51,7 +40,7 @@ function About(props) {
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Image className="aboutPic" src={AboutPic}></Image>
+            <img className="aboutPic" src="images/aboutpic2.jpg"></img>
           </Grid>
         </Grid>
       </div>
@@ -59,7 +48,4 @@ function About(props) {
   );
 }
 
-About.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(About);
+export default About;

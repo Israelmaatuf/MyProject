@@ -1,34 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-import { Image } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import grilledpic1 from "../images/grilledpic1.jpg";
-import grilledCarousel1 from "../images/Carousel/carouselgrilledpic1.jpeg";
-import grilledCarousel2 from "../images/Carousel/carouselgrilledpic2.jpeg";
-import grilledCarousel3 from "../images/Carousel/carouselgrilledpic3.jpeg";
-import grilledCarousel4 from "../images/Carousel/carouselgrilledpic4.jpeg";
-import grilledCarousel5 from "../images/Carousel/carouselgrilledpic5.jpeg";
-import grilledCarousel6 from "../images/Carousel/carouselgrilledpic6.jpeg";
-import grilledCarousel7 from "../images/Carousel/carouselgrilledpic7.jpeg";
-import grilledCarousel8 from "../images/Carousel/carouselgrilledpic8.jpeg";
-import grilledCarousel9 from "../images/Carousel/carouselgrilledpic9.jpeg";
-import grilledCarousel10 from "../images/Carousel/carouselgrilledpic10.jpeg";
-import grilledCarousel11 from "../images/Carousel/carouselgrilledpic11.jpeg";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import "../css/GrilledCatering.css";
 
-const styles = () => ({
-  root: {
-    flexGrow: 1,
-  },
-});
-
 function GrilledCatering(props) {
-  const { classes } = props;
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -48,7 +26,7 @@ function GrilledCatering(props) {
   };
 
   return (
-    <div dir="rtl" className={classes.root}>
+    <div dir="rtl" className="GrilledCatering">
       <Grid container>
         <Grid item xs={12} sm={6}>
           <div className="titleGrilled">
@@ -81,7 +59,7 @@ function GrilledCatering(props) {
           </div>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Image className="grilledPic1" src={grilledpic1}></Image>
+          <img className="grilledPic1" src="images/grilledpic1.jpg"></img>
         </Grid>
         <Grid item xs={12}>
           <div dir="ltr" className="CarouselImagesGrilled">
@@ -97,19 +75,51 @@ function GrilledCatering(props) {
               removeArrowOnDeviceType={["tablet", "mobile"]}
               deviceType={props.deviceType}
               dotListClass="custom-dot-list-style"
-              // itemClass="carousel-item-padding-10-px"
             >
-              <Image className="imgGrilled" src={grilledCarousel1}></Image>
-              <Image className="imgGrilled" src={grilledCarousel2}></Image>
-              <Image className="imgGrilled" src={grilledCarousel3}></Image>
-              <Image className="imgGrilled" src={grilledCarousel4}></Image>
-              <Image className="imgGrilled" src={grilledCarousel5}></Image>
-              <Image className="imgGrilled" src={grilledCarousel6}></Image>
-              <Image className="imgGrilled" src={grilledCarousel7}></Image>
-              <Image className="imgGrilled" src={grilledCarousel8}></Image>
-              <Image className="imgGrilled" src={grilledCarousel9}></Image>
-              <Image className="imgGrilled" src={grilledCarousel10}></Image>
-              <Image className="imgGrilled" src={grilledCarousel11}></Image>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic1.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic2.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic3.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic4.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic5.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic6.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic7.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic8.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic9.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic10.jpeg"
+              ></img>
+              <img
+                className="imgGrilled"
+                src="images/Carousel/carouselgrilledpic11.jpeg"
+              ></img>
             </Carousel>
           </div>
         </Grid>
@@ -117,7 +127,5 @@ function GrilledCatering(props) {
     </div>
   );
 }
-GrilledCatering.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(GrilledCatering);
+
+export default GrilledCatering;

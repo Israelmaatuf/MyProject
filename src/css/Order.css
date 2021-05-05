@@ -1,3 +1,6 @@
+.Order{
+  flex-grow: 1;
+}
 .OrderTitle {
   color: brown;
   text-align: center;

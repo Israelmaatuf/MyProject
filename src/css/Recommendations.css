@@ -1,3 +1,6 @@
+.Recommendations{
+  flex-grow: 1;
+}
 .RecommendationsTitle {
   color: #7f0909;
   text-align: center;

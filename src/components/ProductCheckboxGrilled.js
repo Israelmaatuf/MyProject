@@ -13,7 +13,6 @@ import {
 import "../css/ProductCheckbox.css";
 
 const ProductCheckboxGrilled = ({
-  addItemHandler,
   addItemOfSalads,
   addItemOfBreads,
   addItemOfGrilled,
