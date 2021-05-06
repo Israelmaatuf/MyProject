@@ -22,12 +22,16 @@ const ProductCheckbox = ({
   addItemOfFirstMenu,
   addItemOfSecondMenu,
   addItemOfExtrasMenu,
+  addItemOfSpecialMenu,
+  addItemOfVariousMenu
 }) => {
   const [selectedSalads, setSelectedSalads] = useState([]);
   const [selectedVegetarian, setSelectedVegetarian] = useState([]);
   const [selectedFirstMenu, setSelectedFirstMenu] = useState([]);
   const [selectedSecondMenu, setSelectedSecondMenu] = useState([]);
   const [selectedExtrasMenu, setSelectedExtrasMenu] = useState([]);
+  const [selectedSpecialMenu, setSelectedSpecialMenu] = useState([]);
+  const [selectedVariousMenu, setSelectedVariousMenu] = useState([]);
   const [input, setInput] = useState({
     name: "",
     phone: "",
@@ -102,6 +106,29 @@ const ProductCheckbox = ({
     } else {
       itemsArr = itemsArr.filter((value) => value !== e.target.value);
       setSelectedExtrasMenu(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+
+  addItemOfSpecialMenu = (e) => {
+    let itemsArr = [...selectedSpecialMenu];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedSpecialMenu(itemsArr);
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedSpecialMenu(itemsArr);
+    }
+    console.log(itemsArr);
+  };
+  addItemOfVariousMenu = (e) => {
+    let itemsArr = [...selectedVariousMenu];
+    if (e.target.checked) {
+      itemsArr.push(e.target.value);
+      setSelectedVariousMenu(itemsArr);
+    } else {
+      itemsArr = itemsArr.filter((value) => value !== e.target.value);
+      setSelectedVariousMenu(itemsArr);
     }
     console.log(itemsArr);
   };
@@ -220,7 +247,7 @@ const ProductCheckbox = ({
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfSpecialMenu}
             />
           </FormGroup>
         </FormControl>
@@ -237,7 +264,7 @@ const ProductCheckbox = ({
               value={index}
               control={<Checkbox color="primary" />}
               label={index}
-              onChange={addItemHandler}
+              onChange={addItemOfVariousMenu}
             />
           </FormGroup>
         </FormControl>
